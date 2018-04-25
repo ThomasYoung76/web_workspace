@@ -1,0 +1,288 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module page</title>
+<meta charset="utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>page</strong></big></big> (version 2.0, 2017-08-01)</font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:///D:/workspace/lib/page.py">d:\workspace\lib\page.py</a></font></td></tr></table>
+    <p><tt>#&nbsp;coding:&nbsp;utf-8</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="logging.html">logging</a><br>
+<a href="os.html">os</a><br>
+</td><td width="25%" valign=top><a href="shutil.html">shutil</a><br>
+<a href="sys.html">sys</a><br>
+</td><td width="25%" valign=top><a href="traceback.html">traceback</a><br>
+<a href="selenium.webdriver.html">selenium.webdriver</a><br>
+</td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="__builtin__.html#object">__builtin__.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="page.html#PLMS">PLMS</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="PLMS">class <strong>PLMS</strong></a>(<a href="__builtin__.html#object">__builtin__.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>实例化该类时登陆三江智慧云<br>
+sj_main_&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;主页<br>
+sj_list_&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;设备列表<br>
+sj_panel_&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;设备编辑面板<br>
+sj_func_&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;其他功能类方法<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="PLMS-__init__"><strong>__init__</strong></a>(self)</dt><dd><tt>登陆网页</tt></dd></dl>
+
+<dl><dt><a name="PLMS-sj_func_back_main_page"><strong>sj_func_back_main_page</strong></a>(self)</dt><dd><tt>回到主页<br>
+:return:&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="PLMS-sj_func_is_element_enable"><strong>sj_func_is_element_enable</strong></a>(self, ele_id)</dt><dd><tt>#&nbsp;检查元素是否可用</tt></dd></dl>
+
+<dl><dt><a name="PLMS-sj_func_is_tips_display"><strong>sj_func_is_tips_display</strong></a>(self, content)</dt><dd><tt>检查提示内容是否存在<br>
+:param&nbsp;content:&nbsp;错误或其他友情提示<br>
+:return:&nbsp;bool值</tt></dd></dl>
+
+<dl><dt><a name="PLMS-sj_func_logout"><strong>sj_func_logout</strong></a>(self)</dt><dd><tt>注销账号<br>
+:return:&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="PLMS-sj_func_refresh"><strong>sj_func_refresh</strong></a>(self)</dt><dd><tt>刷新页面<br>
+:return:&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="PLMS-sj_list_add_device"><strong>sj_list_add_device</strong></a>(self, device_name, is_save<font color="#909090">=True</font>)</dt><dd><tt>添加用户设备后，如果保存则，回到原界面，如果不保存，则界面不跳转<br>
+:param&nbsp;device_name:&nbsp;新设备名<br>
+:is_save:保存则，返回原界面，不保存则留在新用户界面<br>
+:return:&nbsp;新设备ID</tt></dd></dl>
+
+<dl><dt><a name="PLMS-sj_list_copy_device"><strong>sj_list_copy_device</strong></a>(self, device_id, is_save<font color="#909090">=True</font>)</dt><dd><tt>复制用户设备<br>
+:param&nbsp;device_id:&nbsp;原设备ID<br>
+:is_save:&nbsp;是否保存<br>
+:return:&nbsp;返回新设备ID</tt></dd></dl>
+
+<dl><dt><a name="PLMS-sj_list_del_device"><strong>sj_list_del_device</strong></a>(self, device_id)</dt><dd><tt>删除用户设备<br>
+:param&nbsp;device_id:&nbsp;设备ID<br>
+:return:</tt></dd></dl>
+
+<dl><dt><a name="PLMS-sj_list_del_device_upgrade"><strong>sj_list_del_device_upgrade</strong></a>(self, device_key, count<font color="#909090">=1</font>, is_last_page<font color="#909090">=True</font>, flag_device_id<font color="#909090">=None</font>)</dt><dd><tt>从最后一页最后一项往前逐条记录遍历设备ID并删除，遇到flag_device_id则停止,用于删除测试时新增设备<br>
+:param&nbsp;device_key:&nbsp;模糊匹配设备ID（可用于批量删除，尽可能最大匹配，防止误删）<br>
+:param&nbsp;count:&nbsp;待删除的设备数，精确删除设备时为1<br>
+:param&nbsp;is_last_page:&nbsp;是否只在最后一页进行遍历<br>
+:param&nbsp;flag_device_id:&nbsp;设备ID标识，遍历到该标识则退出整个遍历过程，设置该设备值防止误删<br>
+:return:&nbsp;bool值</tt></dd></dl>
+
+<dl><dt><a name="PLMS-sj_list_edit_device"><strong>sj_list_edit_device</strong></a>(self, index<font color="#909090">=-1</font>)</dt><dd><tt>设备列表界面编辑设备，默认编辑最后一个设备，进入设备面板页<br>
+:param&nbsp;index:&nbsp;设备位置，index为1表示设备列表页第一个设备，index为-1表示倒数第一个设备,默认编辑当前页最后一个设备<br>
+:return:&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="PLMS-sj_list_export_device"><strong>sj_list_export_device</strong></a>(self, dev_type<font color="#909090">=None</font>, batch_num<font color="#909090">=None</font>, exp_count<font color="#909090">=None</font>, exp_is_excel<font color="#909090">=True</font>, is_confirm<font color="#909090">=True</font>, sleep_time<font color="#909090">=3</font>)</dt><dd><tt>导出设备界面封装<br>
+:param&nbsp;dev_type:&nbsp;设备类型（非中文类型名）<br>
+:param&nbsp;batch_num:&nbsp;设备批次<br>
+:param&nbsp;exp_count:&nbsp;导出个数<br>
+:param&nbsp;exp_is_excel:&nbsp;导出方式<br>
+:param&nbsp;is_confirm:&nbsp;是否确定导出<br>
+:param&nbsp;sleep_time:&nbsp;等待导出完成，默认3秒，检查错误导出的提示需设置sleep_time为0跳过等待<br>
+:return:None</tt></dd></dl>
+
+<dl><dt><a name="PLMS-sj_list_function"><strong>sj_list_function</strong></a>(self, function_id)</dt><dd><tt>点击进入设备列表左下方的功能项<br>
+:param&nbsp;function_id:&nbsp;功能元素id，如导入为'btn_imp'，导出为'btn_exp'，批量生成为'batchGen'<br>
+:return:&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="PLMS-sj_list_gen_device"><strong>sj_list_gen_device</strong></a>(self, batch_num<font color="#909090">=None</font>, total_count<font color="#909090">=None</font>, dev_type<font color="#909090">=None</font>, dev_name<font color="#909090">=None</font>, dev_owner<font color="#909090">=None</font>, is_confirm<font color="#909090">=True</font>)</dt><dd><tt>批量生成设备<br>
+:param&nbsp;batch_num:批次编号<br>
+:param&nbsp;total_count:生成个数<br>
+:param&nbsp;dev_type:设备类型<br>
+:param&nbsp;dev_name:设备名称<br>
+:param&nbsp;dev_owner:设备属主<br>
+:param&nbsp;is_confirm:&nbsp;是否确定<br>
+:return:&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="PLMS-sj_list_import_device"><strong>sj_list_import_device</strong></a>(self, dev_type<font color="#909090">=None</font>, dev_name<font color="#909090">=None</font>, dev_batch<font color="#909090">=None</font>, virtual_dev<font color="#909090">=None</font>, dev_owner<font color="#909090">=None</font>, upload_file<font color="#909090">=None</font>, is_confirm<font color="#909090">=True</font>)</dt><dd><tt>导入设备界面封装<br>
+:param&nbsp;dev_type:选择设备类型<br>
+:param&nbsp;dev_name:输入设备名称<br>
+:param&nbsp;dev_batch:输入设备批次<br>
+:param&nbsp;virtual_dev:虚拟设备分组<br>
+:param&nbsp;dev_owner:添加设备属主<br>
+:param&nbsp;upload_file:上传excel文件<br>
+:param&nbsp;is_confirm:&nbsp;确定还是取消<br>
+:return:</tt></dd></dl>
+
+<dl><dt><a name="PLMS-sj_list_is_device_exist"><strong>sj_list_is_device_exist</strong></a>(self, device_id, device_menu<font color="#909090">=''</font>, is_check<font color="#909090">=True</font>)</dt><dd><tt>在设备列表界面查找设备，is_check为True时检查设备的存在性，is_check为False时，跳过检查<br>
+:param&nbsp;device_id:&nbsp;设备ID<br>
+:device_menu:&nbsp;点击设备菜单栏元素的id，默认为空，已关注设备、未关注设备、设备属主、公众用户&nbsp;分别为：observed、unobserved、authorized、deviceType_title<br>
+:is_check:&nbsp;为True时检查设备是否存在<br>
+:return:&nbsp;bool值.&nbsp;存在返回True，不存在返回False，&nbsp;跳过检查也返回True</tt></dd></dl>
+
+<dl><dt><a name="PLMS-sj_list_pagenation"><strong>sj_list_pagenation</strong></a>(self, page_id, is_click<font color="#909090">=True</font>)</dt><dd><tt>获取页码值，is_click为True时可点击page_id代表的元素<br>
+:param&nbsp;page_id:&nbsp;取值1、2、3、4、5分别代表点击第一页/上一页/当前页/下一页/最后一页<br>
+:param&nbsp;is_click:&nbsp;是否点击<br>
+:param&nbsp;get_data_page:&nbsp;是否获取该page_id的data-page属性，即页码值<br>
+:return:&nbsp;返回页码值，如page_id=5，获取最后一页的页码值</tt></dd></dl>
+
+<dl><dt><a name="PLMS-sj_list_scan_device"><strong>sj_list_scan_device</strong></a>(self, is_all_page<font color="#909090">=False</font>)</dt><dd><tt>遍历设备列表中当前页的内容，is_all_page为True时，遍历所有页的内容<br>
+:param&nbsp;is_all_page:&nbsp;是否遍历所有页的内容<br>
+:return:&nbsp;设备列表的二维数组</tt></dd></dl>
+
+<dl><dt><a name="PLMS-sj_list_scan_page"><strong>sj_list_scan_page</strong></a>(self, start, stop, is_all_page<font color="#909090">=False</font>)</dt><dd><tt>遍历设备列表中当前页的某些列的内容，is_all_page为True时，遍历所有页的内容。<br>
+:param&nbsp;is_all_page:&nbsp;是否遍历所有页的内容<br>
+:param&nbsp;start:&nbsp;初始列<br>
+:param&nbsp;stop:&nbsp;结束列，该列不扫描<br>
+:return:&nbsp;获取多列时，返回设备列表的二维数组[(...),(...),(...)]，获取单列时返回列表[...]</tt></dd></dl>
+
+<dl><dt><a name="PLMS-sj_list_search"><strong>sj_list_search</strong></a>(self, keyword)</dt><dd><tt>在设备列表页，通过关键字过滤出符合条件的设备<br>
+:param&nbsp;keyword:&nbsp;关键字<br>
+:return:&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="PLMS-sj_list_select_device"><strong>sj_list_select_device</strong></a>(self, index<font color="#909090">=1</font>)</dt><dd><tt>设备列表界面勾选设备，默认勾选第一个设备<br>
+:param&nbsp;index:&nbsp;设备位置，index为1表示设备列表页第一个设备，index为-1表示倒数第一个设备，index=0,选中所有设备，默认勾选当前页第一个设备<br>
+:return:&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="PLMS-sj_list_until_device_exist"><strong>sj_list_until_device_exist</strong></a>(self, device_id)</dt><dd><tt>每隔2秒查找一次设备，直到设备被找到，查询10次仍未找到至返回False<br>
+:param&nbsp;device_id:<br>
+:return:&nbsp;bool值</tt></dd></dl>
+
+<dl><dt><a name="PLMS-sj_main_to_device_list"><strong>sj_main_to_device_list</strong></a>(self, index, sub_menu, dev_type<font color="#909090">=''</font>)</dt><dd><tt>点击菜单栏，进入相应界面<br>
+:param&nbsp;index:&nbsp;int主菜单栏的索引值，从0开始，0~5<br>
+:param&nbsp;sub_menu:&nbsp;子菜单栏的中文菜单名<br>
+:param&nbsp;dev_type:&nbsp;第三层菜单的设备类型<br>
+:return:&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="PLMS-sj_main_to_device_panel"><strong>sj_main_to_device_panel</strong></a>(self, device_id, index, sub_menu, dev_type<font color="#909090">=''</font>)</dt><dd><tt>从主页进入设备编辑面板页<br>
+:param&nbsp;device_id:&nbsp;设备ID<br>
+:param&nbsp;index:&nbsp;主菜单栏的索引值，从0开始，0~5<br>
+:param&nbsp;sub_menu:&nbsp;子菜单栏的中文菜单名<br>
+:param&nbsp;dev_type:&nbsp;第三层菜单的设备类型<br>
+:return:&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="PLMS-sj_panel_back_device_list"><strong>sj_panel_back_device_list</strong></a>(self)</dt><dd><tt>从设备面板页面回到当前类型的设备列表<br>
+:return:&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="PLMS-sj_panel_change_log"><strong>sj_panel_change_log</strong></a>(self)</dt><dd><tt>获取最新一条更新记录<br>
+:return:&nbsp;列表，最新一条更新记录</tt></dd></dl>
+
+<dl><dt><a name="PLMS-sj_panel_function"><strong>sj_panel_function</strong></a>(self, id)</dt><dd><tt>点击ID元素<br>
+应用：1.用户设备、社区虚拟设备，在设备的编辑面板页，进入到设备的功能页，如地图，分组，关注等<br>
+2.在设备的功能页，点击移出分组，加入分组，取消关注，关注<br>
+:param&nbsp;id:&nbsp;功能元素id，如地图分组id为'map'，已加入分组设备为'related'<br>
+:return:None</tt></dd></dl>
+
+<dl><dt><a name="PLMS-sj_panel_get_attr"><strong>sj_panel_get_attr</strong></a>(self, attr_ele_id)</dt><dd><tt>获取设备属性值并返回<br>
+:param&nbsp;attr_ele_id:&nbsp;属性元素id，&nbsp;如属主id为："pf-ownerDevice_id"<br>
+:return:&nbsp;属性值</tt></dd></dl>
+
+<dl><dt><a name="PLMS-sj_panel_manage_user"><strong>sj_panel_manage_user</strong></a>(self, device_id, device_menu, new_owner_id<font color="#909090">=''</font>)</dt><dd><tt>用户编辑面板开始，对设备列表中中的device_id设备进行操作，实现关注设备、取消设备、移交设备的功能<br>
+:param&nbsp;device_id:<br>
+:param&nbsp;device_menu:&nbsp;取值为'observed'、'unobserved'、'authorized'<br>
+:return:&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="PLMS-sj_panel_mod_owner"><strong>sj_panel_mod_owner</strong></a>(self, value)</dt><dd><tt>修改属主<br>
+:param&nbsp;value:&nbsp;属主ID值<br>
+:return:&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="PLMS-sj_panel_modify_device"><strong>sj_panel_modify_device</strong></a>(self, index, value)</dt><dd><tt>在新增设备界面修改设备属性值后保存。<br>
+:param&nbsp;index:&nbsp;属性列的索引值，如ID的索引为4，<br>
+:value:&nbsp;属性值<br>
+:return:&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="PLMS-sj_panel_update_attr"><strong>sj_panel_update_attr</strong></a>(self, attr_ele_id, new_value, is_sure<font color="#909090">=False</font>, is_save<font color="#909090">=True</font>)</dt><dd><tt>在设备编辑面板界面，修改设备属性的值<br>
+:param&nbsp;attr_ele_id:&nbsp;设备属性的值对应的元素id，&nbsp;如属主：'pf-ownerDevice_id'<br>
+:param&nbsp;new_value:&nbsp;设备属性的值<br>
+:param&nbsp;is_sure:处理弹出框，True确定，False取消<br>
+:param&nbsp;is_save:是否保存<br>
+:return:&nbsp;None</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-sj_login"><strong>sj_login</strong></a>(url, username, password, is_login<font color="#909090">=True</font>, browser<font color="#909090">='Firefox'</font>)</dt><dd><tt>登陆页面<br>
+:param&nbsp;url:&nbsp;url地址<br>
+:param&nbsp;username:&nbsp;用户名<br>
+:param&nbsp;password:&nbsp;密码<br>
+:param&nbsp;is_login:&nbsp;是否登陆<br>
+:param&nbsp;browser:&nbsp;采用的浏览器<br>
+:return:&nbsp;登陆后的driver</tt></dd></dl>
+ <dl><dt><a name="-sleep"><strong>sleep</strong></a>(...)</dt><dd><tt><a href="#-sleep">sleep</a>(seconds)<br>
+&nbsp;<br>
+Delay&nbsp;execution&nbsp;for&nbsp;a&nbsp;given&nbsp;number&nbsp;of&nbsp;seconds.&nbsp;&nbsp;The&nbsp;argument&nbsp;may&nbsp;be<br>
+a&nbsp;floating&nbsp;point&nbsp;number&nbsp;for&nbsp;subsecond&nbsp;precision.</tt></dd></dl>
+</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>CC</strong> = []<br>
+<strong>LoRa_device_id</strong> = 'c98fc3c0be0a4710'<br>
+<strong>SJ_DB</strong> = r'D:\workspace\docs\plms_data\plms.db'<br>
+<strong>SJ_DOCS</strong> = r'D:\workspace\docs'<br>
+<strong>SJ_HOME</strong> = r'D:\workspace\testcase'<br>
+<strong>SJ_LIB</strong> = r'D:\workspace\lib'<br>
+<strong>SJ_RESULT</strong> = r'D:\workspace\result'<br>
+<strong>__author__</strong> = 'yangshifu'<br>
+<strong>__date__</strong> = '2017-08-01'<br>
+<strong>__version__</strong> = '2.0'<br>
+<strong>__warningregistry__</strong> = {(r"Not importing directory 'E:\Python27\selenium': missing __init__.py", &lt;type 'exceptions.ImportWarning'&gt;, 4): True}<br>
+<strong>alarm_host_id</strong> = '59317dbcc02f1c65'<br>
+<strong>batch_num</strong> = 20170802<br>
+<strong>browser</strong> = 'FireFox'<br>
+<strong>comm_device_id</strong> = 'd06df7facc28d15f'<br>
+<strong>copy_device_id1</strong> = '5557634c9bf6a4e1'<br>
+<strong>copy_device_id2</strong> = 'c00df758c501ac4f'<br>
+<strong>copy_device_id3</strong> = 'd737822ccb268882'<br>
+<strong>file_log_level</strong> = 20<br>
+<strong>is_log</strong> = True<br>
+<strong>is_print</strong> = True<br>
+<strong>logger</strong> = &lt;logging.RootLogger object&gt;<br>
+<strong>mail_host</strong> = 'smtp.exmail.qq.com'<br>
+<strong>mail_password</strong> = ''<br>
+<strong>mail_user</strong> = ''<br>
+<strong>main_page</strong> = 'https://plms.3jyun.com/index.html#index.html'<br>
+<strong>password</strong> = '12345678'<br>
+<strong>receivers</strong> = ['']<br>
+<strong>sender</strong> = '<font color="#c040c0">\xe6\x9d\xa8\xe7\x9f\xb3\xe7\x94\xab</font>&lt;shifu.yang@fhsjdz.com&gt;'<br>
+<strong>stream_log_level</strong> = 20<br>
+<strong>url</strong> = 'https://plms.3jyun.com/login.html'<br>
+<strong>user_device_id1</strong> = '13480879200_1500288608201'<br>
+<strong>user_device_id2</strong> = '13410000454_1501036839125'<br>
+<strong>username</strong> = 'weilong.shu@fhsjdz.com'</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#7799ee">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Author</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#7799ee"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%">yangshifu</td></tr></table>
+</body></html>

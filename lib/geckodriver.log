@@ -1,0 +1,417 @@
+1515996718355	geckodriver	INFO	Listening on 127.0.0.1:62478
+1515996720294	geckodriver::marionette	INFO	Starting browser D:\Program Files\Mozilla Firefox\firefox.exe with args ["-marionette"]
+[GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64.dll v=0.0.0.0
+1515996726375	Marionette	INFO	Listening on port 62488
+1515996726921	Marionette	WARN	TLS certificate errors will be ignored for this session
+1515996728906	Marionette	INFO	New connections will no longer be accepted
+ource://gre/modules/addons/GMPProvider.jsm
+1502779474069	addons.manager	DEBUG	Loaded provider scope for resource://gre/modules/addons/PluginProvider.jsm
+1502779474070	addons.manager	DEBUG	Starting provider: XPIProvider
+1502779474070	addons.xpi	DEBUG	startup
+1502779474072	addons.xpi	INFO	Mapping cehomepage@mozillaonline.com to C:\Users\SHIFU~1.YAN\AppData\Local\Temp\rust_mozprofile.xExKYVd6orZd\extensions\cehomepage@mozillaonline.com
+1502779474072	addons.xpi	INFO	Mapping coba@mozilla.com.cn to C:\Users\SHIFU~1.YAN\AppData\Local\Temp\rust_mozprofile.xExKYVd6orZd\extensions\coba@mozilla.com.cn.xpi
+1502779474072	addons.xpi	INFO	Mapping commonfix@mozillaonline.com to C:\Users\SHIFU~1.YAN\AppData\Local\Temp\rust_mozprofile.xExKYVd6orZd\extensions\commonfix@mozillaonline.com.xpi
+1502779474073	addons.xpi	INFO	Mapping cpmanager@mozillaonline.com to C:\Users\SHIFU~1.YAN\AppData\Local\Temp\rust_mozprofile.xExKYVd6orZd\extensions\cpmanager@mozillaonline.com.xpi
+1502779474073	addons.xpi	INFO	Mapping easyscreenshot@mozillaonline.com to C:\Users\SHIFU~1.YAN\AppData\Local\Temp\rust_mozprofile.xExKYVd6orZd\extensions\easyscreenshot@mozillaonline.com.xpi
+1502779474073	addons.xpi	INFO	Mapping firebug@software.joehewitt.com to C:\Users\SHIFU~1.YAN\AppData\Local\Temp\rust_mozprofile.xExKYVd6orZd\extensions\firebug@software.joehewitt.com.xpi
+1502779474073	addons.xpi	INFO	Mapping FireXPath@pierre.tholence.com to C:\Users\SHIFU~1.YAN\AppData\Local\Temp\rust_mozprofile.xExKYVd6orZd\extensions\FireXPath@pierre.tholence.com.xpi
+1502779474073	addons.xpi	INFO	Mapping jid0-OrDwsV63wgU4TFI6yptWagbfUE8@jetpack to C:\Users\SHIFU~1.YAN\AppData\Local\Temp\rust_mozprofile.xExKYVd6orZd\extensions\jid0-OrDwsV63wgU4TFI6yptWagbfUE8@jetpack.xpi
+1502779474073	addons.xpi	INFO	Mapping tabtweak@mozillaonline.com to C:\Users\SHIFU~1.YAN\AppData\Local\Temp\rust_mozprofile.xExKYVd6orZd\extensions\tabtweak@mozillaonline.com.xpi
+1502779474074	addons.xpi	INFO	Mapping wx-assistant@mozillaonline.com to C:\Users\SHIFU~1.YAN\AppData\Local\Temp\rust_mozprofile.xExKYVd6orZd\extensions\wx-assistant@mozillaonline.com.xpi
+1502779474074	addons.xpi	INFO	SystemAddonInstallLocation directory is missing
+1502779474074	addons.xpi	INFO	Mapping aushelper@mozilla.org to D:\Program Files\Mozilla Firefox\browser\features\aushelper@mozilla.org.xpi
+1502779474075	addons.xpi	INFO	Mapping e10srollout@mozilla.org to D:\Program Files\Mozilla Firefox\browser\features\e10srollout@mozilla.org.xpi
+1502779474075	addons.xpi	INFO	Mapping firefox@getpocket.com to D:\Program Files\Mozilla Firefox\browser\features\firefox@getpocket.com.xpi
+1502779474075	addons.xpi	INFO	Mapping screenshots@mozilla.org to D:\Program Files\Mozilla Firefox\browser\features\screenshots@mozilla.org.xpi
+1502779474075	addons.xpi	INFO	Mapping webcompat@mozilla.org to D:\Program Files\Mozilla Firefox\browser\features\webcompat@mozilla.org.xpi
+1502779474076	addons.xpi	INFO	Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to D:\Program Files\Mozilla Firefox\browser\extensions\{972ce4c6-7e08-4474-a285-3208198ce6fd}.xpi
+1502779474076	addons.xpi	DEBUG	checkForChanges
+1502779474076	addons.xpi	INFO	SystemAddonInstallLocation directory is missing
+1502779474077	addons.xpi	DEBUG	Loaded add-on state from prefs: {"app-profile":{"cehomepage@mozillaonline.com":{"d":"C:\\Users\\shifu.yang\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\tvumvzbj.default\\extensions\\cehomepage@mozillaonline.com","e":true,"v":"1.55","st":1501636260332,"mt":1501548209131},"coba@mozilla.com.cn":{"d":"C:\\Users\\shifu.yang\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\tvumvzbj.default\\extensions\\coba@mozilla.com.cn.xpi","e":true,"v":"3.55","st":1501548207474},"commonfix@mozillaonline.com":{"d":"C:\\Users\\shifu.yang\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\tvumvzbj.default\\extensions\\commonfix@mozillaonline.com.xpi","e":true,"v":"1.52","st":1501469148555},"cpmanager@mozillaonline.com":{"d":"C:\\Users\\shifu.yang\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\tvumvzbj.default\\extensions\\cpmanager@mozillaonline.com.xpi","e":true,"v":"2.55","st":1501636260125},"easyscreenshot@mozillaonline.com":{"d":"C:\\Users\\shifu.yang\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\tvumvzbj.default\\extensions\\easyscreenshot@mozillaonline.com.xpi","e":true,"v":"2.55","st":1501548208400},"firebug@software.joehewitt.com":{"d":"C:\\Users\\shifu.yang\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\tvumvzbj.default\\extensions\\firebug@software.joehewitt.com.xpi","e":true,"v":"2.0.19","st":1501470776470},"FireXPath@pierre.tholence.com":{"d":"C:\\Users\\shifu.yang\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\tvumvzbj.default\\extensions\\FireXPath@pierre.tholence.com.xpi","e":true,"v":"0.9.7.1.1-signed.1-signed","st":1501470798468},"jid0-OrDwsV63wgU4TFI6yptWagbfUE8@jetpack":{"d":"C:\\Users\\shifu.yang\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\tvumvzbj.default\\extensions\\jid0-OrDwsV63wgU4TFI6yptWagbfUE8@jetpack.xpi","e":true,"v":"2.0.1-signed","st":1499678345730},"tabtweak@mozillaonline.com":{"d":"C:\\Users\\shifu.yang\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\tvumvzbj.default\\extensions\\tabtweak@mozillaonline.com.xpi","e":true,"v":"4.55","st":1501636260112},"wx-assistant@mozillaonline.com":{"d":"C:\\Users\\shifu.yang\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\tvumvzbj.default\\extensions\\wx-assistant@mozillaonline.com.xpi","e":true,"v":"2.0.2","st":1501469148756}},"app-system-defaults":{"aushelper@mozilla.org":{"d":"D:\\Program Files\\Mozilla Firefox\\browser\\features\\aushelper@mozilla.org.xpi","e":true,"v":"2.0","st":1499398438846},"e10srollout@mozilla.org":{"d":"D:\\Program Files\\Mozilla Firefox\\browser\\features\\e10srollout@mozilla.org.xpi","e":true,"v":"1.50","st":1499398438846},"firefox@getpocket.com":{"d":"D:\\Program Files\\Mozilla Firefox\\browser\\features\\firefox@getpocket.com.xpi","e":true,"v":"1.0.5","st":1499398438846},"screenshots@mozilla.org":{"d":"D:\\Program Files\\Mozilla Firefox\\browser\\features\\screenshots@mozilla.org.xpi","e":true,"v":"6.6.0","st":1496964922345},"webcompat@mozilla.org":{"d":"D:\\Program Files\\Mozilla Firefox\\browser\\features\\webcompat@mozilla.org.xpi","e":true,"v":"1.1","st":1499398438846}},"app-global":{"{972ce4c6-7e08-4474-a285-3208198ce6fd}":{"d":"D:\\Program Files\\Mozilla Firefox\\browser\\extensions\\{972ce4c6-7e08-4474-a285-3208198ce6fd}.xpi","e":true,"v":"54.0.1","st":1499398438846}}}
+1502779474078	addons.xpi	DEBUG	getModTime: Recursive scan of cehomepage@mozillaonline.com
+1502779474097	addons.xpi	DEBUG	Changed add-on cehomepage@mozillaonline.com in app-profile
+1502779474098	addons.xpi	DEBUG	getModTime: Recursive scan of coba@mozilla.com.cn
+1502779474098	addons.xpi	DEBUG	Changed add-on coba@mozilla.com.cn in app-profile
+1502779474098	addons.xpi	DEBUG	getModTime: Recursive scan of commonfix@mozillaonline.com
+1502779474098	addons.xpi	DEBUG	Changed add-on commonfix@mozillaonline.com in app-profile
+1502779474099	addons.xpi	DEBUG	getModTime: Recursive scan of cpmanager@mozillaonline.com
+1502779474099	addons.xpi	DEBUG	Changed add-on cpmanager@mozillaonline.com in app-profile
+1502779474099	addons.xpi	DEBUG	getModTime: Recursive scan of easyscreenshot@mozillaonline.com
+1502779474099	addons.xpi	DEBUG	Changed add-on easyscreenshot@mozillaonline.com in app-profile
+1502779474100	addons.xpi	DEBUG	getModTime: Recursive scan of firebug@software.joehewitt.com
+1502779474100	addons.xpi	DEBUG	Changed add-on firebug@software.joehewitt.com in app-profile
+1502779474100	addons.xpi	DEBUG	getModTime: Recursive scan of FireXPath@pierre.tholence.com
+1502779474100	addons.xpi	DEBUG	Changed add-on FireXPath@pierre.tholence.com in app-profile
+1502779474100	addons.xpi	DEBUG	getModTime: Recursive scan of jid0-OrDwsV63wgU4TFI6yptWagbfUE8@jetpack
+1502779474101	addons.xpi	DEBUG	Changed add-on jid0-OrDwsV63wgU4TFI6yptWagbfUE8@jetpack in app-profile
+1502779474101	addons.xpi	DEBUG	getModTime: Recursive scan of tabtweak@mozillaonline.com
+1502779474101	addons.xpi	DEBUG	Changed add-on tabtweak@mozillaonline.com in app-profile
+1502779474101	addons.xpi	DEBUG	getModTime: Recursive scan of wx-assistant@mozillaonline.com
+1502779474101	addons.xpi	DEBUG	Changed add-on wx-assistant@mozillaonline.com in app-profile
+1502779474102	addons.xpi	DEBUG	getModTime: Recursive scan of aushelper@mozilla.org
+1502779474102	addons.xpi	DEBUG	Changed add-on aushelper@mozilla.org in app-system-defaults
+1502779474102	addons.xpi	DEBUG	getModTime: Recursive scan of e10srollout@mozilla.org
+1502779474103	addons.xpi	DEBUG	Changed add-on e10srollout@mozilla.org in app-system-defaults
+1502779474103	addons.xpi	DEBUG	getModTime: Recursive scan of firefox@getpocket.com
+1502779474104	addons.xpi	DEBUG	Changed add-on firefox@getpocket.com in app-system-defaults
+1502779474104	addons.xpi	DEBUG	getModTime: Recursive scan of screenshots@mozilla.org
+1502779474105	addons.xpi	DEBUG	Changed add-on screenshots@mozilla.org in app-system-defaults
+1502779474105	addons.xpi	DEBUG	getModTime: Recursive scan of webcompat@mozilla.org
+1502779474105	addons.xpi	DEBUG	Changed add-on webcompat@mozilla.org in app-system-defaults
+1502779474105	addons.xpi	DEBUG	getModTime: Recursive scan of {972ce4c6-7e08-4474-a285-3208198ce6fd}
+1502779474106	addons.xpi	DEBUG	Changed add-on {972ce4c6-7e08-4474-a285-3208198ce6fd} in app-global
+1502779474106	addons.xpi	DEBUG	getInstallState changed: true, state: {"app-profile":{"cehomepage@mozillaonline.com":{"d":"C:\\Users\\SHIFU~1.YAN\\AppData\\Local\\Temp\\rust_mozprofile.xExKYVd6orZd\\extensions\\cehomepage@mozillaonline.com","e":true,"v":"1.55","st":1502779471167,"mt":1502779471070},"coba@mozilla.com.cn":{"d":"C:\\Users\\SHIFU~1.YAN\\AppData\\Local\\Temp\\rust_mozprofile.xExKYVd6orZd\\extensions\\coba@mozilla.com.cn.xpi","e":true,"v":"3.55","st":1502779471041},"commonfix@mozillaonline.com":{"d":"C:\\Users\\SHIFU~1.YAN\\AppData\\Local\\Temp\\rust_mozprofile.xExKYVd6orZd\\extensions\\commonfix@mozillaonline.com.xpi","e":true,"v":"1.52","st":1502779471042},"cpmanager@mozillaonline.com":{"d":"C:\\Users\\SHIFU~1.YAN\\AppData\\Local\\Temp\\rust_mozprofile.xExKYVd6orZd\\extensions\\cpmanager@mozillaonline.com.xpi","e":true,"v":"2.55","st":1502779471045},"easyscreenshot@mozillaonline.com":{"d":"C:\\Users\\SHIFU~1.YAN\\AppData\\Local\\Temp\\rust_mozprofile.xExKYVd6orZd\\extensions\\easyscreenshot@mozillaonline.com.xpi","e":true,"v":"2.55","st":1502779471047},"firebug@software.joehewitt.com":{"d":"C:\\Users\\SHIFU~1.YAN\\AppData\\Local\\Temp\\rust_mozprofile.xExKYVd6orZd\\extensions\\firebug@software.joehewitt.com.xpi","e":true,"v":"2.0.19","st":1502779471062},"FireXPath@pierre.tholence.com":{"d":"C:\\Users\\SHIFU~1.YAN\\AppData\\Local\\Temp\\rust_mozprofile.xExKYVd6orZd\\extensions\\FireXPath@pierre.tholence.com.xpi","e":true,"v":"0.9.7.1.1-signed.1-signed","st":1502779471064},"jid0-OrDwsV63wgU4TFI6yptWagbfUE8@jetpack":{"d":"C:\\Users\\SHIFU~1.YAN\\AppData\\Local\\Temp\\rust_mozprofile.xExKYVd6orZd\\extensions\\jid0-OrDwsV63wgU4TFI6yptWagbfUE8@jetpack.xpi","e":true,"v":"2.0.1-signed","st":1502779471065},"tabtweak@mozillaonline.com":{"d":"C:\\Users\\SHIFU~1.YAN\\AppData\\Local\\Temp\\rust_mozprofile.xExKYVd6orZd\\extensions\\tabtweak@mozillaonline.com.xpi","e":true,"v":"4.55","st":1502779471066},"wx-assistant@mozillaonline.com":{"d":"C:\\Users\\SHIFU~1.YAN\\AppData\\Local\\Temp\\rust_mozprofile.xExKYVd6orZd\\extensions\\wx-assistant@mozillaonline.com.xpi","e":true,"v":"2.0.2","st":1502779471068}},"app-system-defaults":{"aushelper@mozilla.org":{"d":"D:\\Program Files\\Mozilla Firefox\\browser\\features\\aushelper@mozilla.org.xpi","e":true,"v":"2.0","st":1499398438846},"e10srollout@mozilla.org":{"d":"D:\\Program Files\\Mozilla Firefox\\browser\\features\\e10srollout@mozilla.org.xpi","e":true,"v":"1.50","st":1499398438846},"firefox@getpocket.com":{"d":"D:\\Program Files\\Mozilla Firefox\\browser\\features\\firefox@getpocket.com.xpi","e":true,"v":"1.0.5","st":1499398438846},"screenshots@mozilla.org":{"d":"D:\\Program Files\\Mozilla Firefox\\browser\\features\\screenshots@mozilla.org.xpi","e":true,"v":"6.6.0","st":1496964922345},"webcompat@mozilla.org":{"d":"D:\\Program Files\\Mozilla Firefox\\browser\\features\\webcompat@mozilla.org.xpi","e":true,"v":"1.1","st":1499398438846}},"app-global":{"{972ce4c6-7e08-4474-a285-3208198ce6fd}":{"d":"D:\\Program Files\\Mozilla Firefox\\browser\\extensions\\{972ce4c6-7e08-4474-a285-3208198ce6fd}.xpi","e":true,"v":"54.0.1","st":1499398438846}}}
+1502779474111	addons.xpi-utils	DEBUG	Opening XPI database C:\Users\SHIFU~1.YAN\AppData\Local\Temp\rust_mozprofile.xExKYVd6orZd\extensions.json
+1502779474115	addons.xpi-utils	DEBUG	Successfully read XPI database
+1502779474116	addons.xpi-utils	DEBUG	Add-on jid0-OrDwsV63wgU4TFI6yptWagbfUE8@jetpack modified in app-profile
+*** Blocklist::_loadBlocklistFromFile: blocklist is disabled
+1502779474132	addons.xpi	DEBUG	Add-on FireXPath@pierre.tholence.com blocks e10s rollout.
+1502779474132	DeferredSave.extensions.json	DEBUG	Save changes
+1502779474134	addons.xpi	DEBUG	Add-on FireXPath@pierre.tholence.com blocks e10s rollout.
+1502779474134	DeferredSave.extensions.json	DEBUG	Save changes
+1502779474134	addons.xpi-utils	DEBUG	Add-on commonfix@mozillaonline.com modified in app-profile
+1502779474138	DeferredSave.extensions.json	DEBUG	Starting timer
+1502779474143	addons.xpi	DEBUG	Add-on FireXPath@pierre.tholence.com blocks e10s rollout.
+1502779474144	DeferredSave.extensions.json	DEBUG	Save changes
+1502779474144	addons.xpi	DEBUG	Add-on FireXPath@pierre.tholence.com blocks e10s rollout.
+1502779474145	DeferredSave.extensions.json	DEBUG	Save changes
+1502779474145	addons.xpi-utils	DEBUG	Add-on wx-assistant@mozillaonline.com modified in app-profile
+1502779474195	DeferredSave.extensions.json	DEBUG	Starting write
+1502779474236	addons.xpi	DEBUG	Add-on FireXPath@pierre.tholence.com blocks e10s rollout.
+1502779474236	DeferredSave.extensions.json	DEBUG	Save changes
+1502779474237	DeferredSave.extensions.json	DEBUG	Data changed while write in progress
+1502779474238	addons.xpi	DEBUG	Add-on FireXPath@pierre.tholence.com blocks e10s rollout.
+1502779474238	DeferredSave.extensions.json	DEBUG	Save changes
+1502779474238	addons.xpi-utils	DEBUG	Add-on firebug@software.joehewitt.com modified in app-profile
+1502779474271	DeferredSave.extensions.json	DEBUG	Write succeeded
+1502779474271	addons.xpi-utils	DEBUG	XPI Database saved, setting schema version preference to 19
+1502779474271	DeferredSave.extensions.json	DEBUG	Starting timer
+1502779474292	DeferredSave.extensions.json	DEBUG	Starting write
+1502779474297	DeferredSave.extensions.json	DEBUG	Write succeeded
+1502779474310	addons.xpi	DEBUG	Add-on FireXPath@pierre.tholence.com blocks e10s rollout.
+1502779474310	DeferredSave.extensions.json	DEBUG	Save changes
+1502779474310	addons.xpi	DEBUG	Add-on FireXPath@pierre.tholence.com blocks e10s rollout.
+1502779474310	DeferredSave.extensions.json	DEBUG	Save changes
+1502779474311	addons.xpi-utils	DEBUG	Add-on FireXPath@pierre.tholence.com modified in app-profile
+1502779474313	DeferredSave.extensions.json	DEBUG	Starting timer
+1502779474317	DeferredSave.extensions.json	DEBUG	Save changes
+1502779474317	DeferredSave.extensions.json	DEBUG	Save changes
+1502779474317	addons.xpi-utils	DEBUG	Add-on easyscreenshot@mozillaonline.com modified in app-profile
+1502779474334	DeferredSave.extensions.json	DEBUG	Starting write
+1502779474338	DeferredSave.extensions.json	DEBUG	Save changes
+1502779474338	DeferredSave.extensions.json	DEBUG	Data changed while write in progress
+1502779474339	DeferredSave.extensions.json	DEBUG	Save changes
+1502779474340	addons.xpi-utils	DEBUG	Add-on cehomepage@mozillaonline.com modified in app-profile
+1502779474353	DeferredSave.extensions.json	DEBUG	Write succeeded
+1502779474354	DeferredSave.extensions.json	DEBUG	Starting timer
+1502779474366	DeferredSave.extensions.json	DEBUG	Save changes
+1502779474366	DeferredSave.extensions.json	DEBUG	Save changes
+1502779474366	addons.xpi-utils	DEBUG	Add-on cpmanager@mozillaonline.com modified in app-profile
+1502779474374	DeferredSave.extensions.json	DEBUG	Starting write
+1502779474377	DeferredSave.extensions.json	DEBUG	Save changes
+1502779474378	DeferredSave.extensions.json	DEBUG	Data changed while write in progress
+1502779474378	DeferredSave.extensions.json	DEBUG	Save changes
+1502779474379	addons.xpi-utils	DEBUG	Add-on tabtweak@mozillaonline.com modified in app-profile
+1502779474384	DeferredSave.extensions.json	DEBUG	Write succeeded
+1502779474384	DeferredSave.extensions.json	DEBUG	Starting timer
+1502779474386	DeferredSave.extensions.json	DEBUG	Save changes
+1502779474387	DeferredSave.extensions.json	DEBUG	Save changes
+1502779474387	addons.xpi-utils	DEBUG	Add-on coba@mozilla.com.cn modified in app-profile
+1502779474400	DeferredSave.extensions.json	DEBUG	Save changes
+1502779474400	DeferredSave.extensions.json	DEBUG	Save changes
+1502779474401	addons.manager	DEBUG	Registering startup change 'changed' for jid0-OrDwsV63wgU4TFI6yptWagbfUE8@jetpack
+1502779474406	addons.xpi	DEBUG	Loading bootstrap scope from C:\Users\shifu.yang\AppData\Roaming\Mozilla\Firefox\Profiles\tvumvzbj.default\extensions\jid0-OrDwsV63wgU4TFI6yptWagbfUE8@jetpack.xpi
+1502779474414	addons.xpi	DEBUG	Calling bootstrap method uninstall on jid0-OrDwsV63wgU4TFI6yptWagbfUE8@jetpack version 2.0.1-signed
+1502779474415	addons.xpi	DEBUG	Loading bootstrap scope from C:\Users\SHIFU~1.YAN\AppData\Local\Temp\rust_mozprofile.xExKYVd6orZd\extensions\jid0-OrDwsV63wgU4TFI6yptWagbfUE8@jetpack.xpi
+1502779474417	addons.xpi	DEBUG	Calling bootstrap method install on jid0-OrDwsV63wgU4TFI6yptWagbfUE8@jetpack version 2.0.1-signed
+1502779474417	addons.xpi-utils	DEBUG	Make addon app-profile:jid0-OrDwsV63wgU4TFI6yptWagbfUE8@jetpack visible
+1502779474418	addons.xpi	DEBUG	Add-on jid0-OrDwsV63wgU4TFI6yptWagbfUE8@jetpack blocks e10s rollout.
+1502779474418	DeferredSave.extensions.json	DEBUG	Save changes
+1502779474418	addons.manager	DEBUG	Registering startup change 'changed' for commonfix@mozillaonline.com
+1502779474418	addons.xpi	DEBUG	Loading bootstrap scope from C:\Users\shifu.yang\AppData\Roaming\Mozilla\Firefox\Profiles\tvumvzbj.default\extensions\commonfix@mozillaonline.com.xpi
+1502779474450	addons.xpi	DEBUG	Calling bootstrap method uninstall on commonfix@mozillaonline.com version 1.52
+1502779474451	addons.xpi	DEBUG	Loading bootstrap scope from C:\Users\SHIFU~1.YAN\AppData\Local\Temp\rust_mozprofile.xExKYVd6orZd\extensions\commonfix@mozillaonline.com.xpi
+1502779474453	addons.xpi	DEBUG	Calling bootstrap method install on commonfix@mozillaonline.com version 1.52
+1502779474453	addons.xpi-utils	DEBUG	Make addon app-profile:commonfix@mozillaonline.com visible
+1502779474453	addons.xpi	DEBUG	Add-on jid0-OrDwsV63wgU4TFI6yptWagbfUE8@jetpack blocks e10s rollout.
+1502779474453	DeferredSave.extensions.json	DEBUG	Save changes
+1502779474453	addons.manager	DEBUG	Registering startup change 'changed' for wx-assistant@mozillaonline.com
+1502779474454	addons.xpi	DEBUG	Loading bootstrap scope from C:\Users\shifu.yang\AppData\Roaming\Mozilla\Firefox\Profiles\tvumvzbj.default\extensions\wx-assistant@mozillaonline.com.xpi
+1502779474455	addons.xpi	DEBUG	Calling bootstrap method uninstall on wx-assistant@mozillaonline.com version 2.0.2
+1502779474455	addons.xpi	DEBUG	Loading bootstrap scope from C:\Users\SHIFU~1.YAN\AppData\Local\Temp\rust_mozprofile.xExKYVd6orZd\extensions\wx-assistant@mozillaonline.com.xpi
+1502779474456	addons.xpi	DEBUG	Calling bootstrap method install on wx-assistant@mozillaonline.com version 2.0.2
+1502779474456	addons.xpi-utils	DEBUG	Make addon app-profile:wx-assistant@mozillaonline.com visible
+1502779474457	addons.xpi	DEBUG	Add-on jid0-OrDwsV63wgU4TFI6yptWagbfUE8@jetpack blocks e10s rollout.
+1502779474457	DeferredSave.extensions.json	DEBUG	Save changes
+1502779474457	addons.manager	DEBUG	Registering startup change 'changed' for firebug@software.joehewitt.com
+1502779474457	addons.xpi	DEBUG	Loading bootstrap scope from C:\Users\shifu.yang\AppData\Roaming\Mozilla\Firefox\Profiles\tvumvzbj.default\extensions\firebug@software.joehewitt.com.xpi
+1502779474459	addons.xpi	DEBUG	Calling bootstrap method uninstall on firebug@software.joehewitt.com version 2.0.19
+1502779474460	addons.xpi	DEBUG	Loading bootstrap scope from C:\Users\SHIFU~1.YAN\AppData\Local\Temp\rust_mozprofile.xExKYVd6orZd\extensions\firebug@software.joehewitt.com.xpi
+1502779474462	addons.xpi	DEBUG	Calling bootstrap method install on firebug@software.joehewitt.com version 2.0.19
+1502779474462	addons.xpi-utils	DEBUG	Make addon app-profile:firebug@software.joehewitt.com visible
+1502779474462	addons.xpi	DEBUG	Add-on jid0-OrDwsV63wgU4TFI6yptWagbfUE8@jetpack blocks e10s rollout.
+1502779474462	DeferredSave.extensions.json	DEBUG	Save changes
+1502779474463	addons.manager	DEBUG	Registering startup change 'changed' for FireXPath@pierre.tholence.com
+1502779474463	addons.xpi-utils	DEBUG	Make addon app-profile:FireXPath@pierre.tholence.com visible
+1502779474463	addons.xpi	DEBUG	Add-on jid0-OrDwsV63wgU4TFI6yptWagbfUE8@jetpack blocks e10s rollout.
+1502779474463	DeferredSave.extensions.json	DEBUG	Save changes
+1502779474463	addons.manager	DEBUG	Registering startup change 'changed' for easyscreenshot@mozillaonline.com
+1502779474464	addons.xpi	DEBUG	Loading bootstrap scope from C:\Users\shifu.yang\AppData\Roaming\Mozilla\Firefox\Profiles\tvumvzbj.default\extensions\easyscreenshot@mozillaonline.com.xpi
+1502779474465	addons.xpi	DEBUG	Calling bootstrap method uninstall on easyscreenshot@mozillaonline.com version 2.55
+1502779474466	addons.xpi	DEBUG	Loading bootstrap scope from C:\Users\SHIFU~1.YAN\AppData\Local\Temp\rust_mozprofile.xExKYVd6orZd\extensions\easyscreenshot@mozillaonline.com.xpi
+1502779474467	addons.xpi	DEBUG	Calling bootstrap method install on easyscreenshot@mozillaonline.com version 2.55
+1502779474467	addons.xpi-utils	DEBUG	Make addon app-profile:easyscreenshot@mozillaonline.com visible
+1502779474467	addons.xpi	DEBUG	Add-on jid0-OrDwsV63wgU4TFI6yptWagbfUE8@jetpack blocks e10s rollout.
+1502779474467	DeferredSave.extensions.json	DEBUG	Save changes
+1502779474467	addons.manager	DEBUG	Registering startup change 'changed' for cehomepage@mozillaonline.com
+1502779474467	addons.xpi-utils	DEBUG	Make addon app-profile:cehomepage@mozillaonline.com visible
+1502779474468	addons.xpi	DEBUG	Add-on jid0-OrDwsV63wgU4TFI6yptWagbfUE8@jetpack blocks e10s rollout.
+1502779474468	DeferredSave.extensions.json	DEBUG	Save changes
+1502779474468	addons.manager	DEBUG	Registering startup change 'changed' for cpmanager@mozillaonline.com
+1502779474468	addons.xpi-utils	DEBUG	Make addon app-profile:cpmanager@mozillaonline.com visible
+1502779474468	addons.xpi	DEBUG	Add-on jid0-OrDwsV63wgU4TFI6yptWagbfUE8@jetpack blocks e10s rollout.
+1502779474468	DeferredSave.extensions.json	DEBUG	Save changes
+1502779474468	addons.manager	DEBUG	Registering startup change 'changed' for tabtweak@mozillaonline.com
+1502779474468	addons.xpi-utils	DEBUG	Make addon app-profile:tabtweak@mozillaonline.com visible
+1502779474468	addons.xpi	DEBUG	Add-on jid0-OrDwsV63wgU4TFI6yptWagbfUE8@jetpack blocks e10s rollout.
+1502779474469	DeferredSave.extensions.json	DEBUG	Save changes
+1502779474469	addons.manager	DEBUG	Registering startup change 'changed' for coba@mozilla.com.cn
+1502779474469	addons.xpi	DEBUG	Loading bootstrap scope from C:\Users\shifu.yang\AppData\Roaming\Mozilla\Firefox\Profiles\tvumvzbj.default\extensions\coba@mozilla.com.cn.xpi
+1502779474471	addons.xpi	DEBUG	Calling bootstrap method uninstall on coba@mozilla.com.cn version 3.55
+1502779474471	addons.xpi	DEBUG	Loading bootstrap scope from C:\Users\SHIFU~1.YAN\AppData\Local\Temp\rust_mozprofile.xExKYVd6orZd\extensions\coba@mozilla.com.cn.xpi
+1502779474473	addons.xpi	DEBUG	Calling bootstrap method install on coba@mozilla.com.cn version 3.55
+1502779474473	addons.xpi-utils	DEBUG	Make addon app-profile:coba@mozilla.com.cn visible
+1502779474474	addons.xpi	DEBUG	Add-on jid0-OrDwsV63wgU4TFI6yptWagbfUE8@jetpack blocks e10s rollout.
+1502779474474	DeferredSave.extensions.json	DEBUG	Save changes
+1502779474474	addons.xpi-utils	DEBUG	Make addon app-system-defaults:aushelper@mozilla.org visible
+1502779474474	addons.xpi	DEBUG	Add-on jid0-OrDwsV63wgU4TFI6yptWagbfUE8@jetpack blocks e10s rollout.
+1502779474474	DeferredSave.extensions.json	DEBUG	Save changes
+1502779474474	addons.xpi-utils	DEBUG	Make addon app-system-defaults:e10srollout@mozilla.org visible
+1502779474474	addons.xpi	DEBUG	Add-on jid0-OrDwsV63wgU4TFI6yptWagbfUE8@jetpack blocks e10s rollout.
+1502779474474	DeferredSave.extensions.json	DEBUG	Save changes
+1502779474474	addons.xpi-utils	DEBUG	Make addon app-system-defaults:firefox@getpocket.com visible
+1502779474474	addons.xpi	DEBUG	Add-on jid0-OrDwsV63wgU4TFI6yptWagbfUE8@jetpack blocks e10s rollout.
+1502779474475	DeferredSave.extensions.json	DEBUG	Save changes
+1502779474475	addons.xpi-utils	DEBUG	Make addon app-system-defaults:webcompat@mozilla.org visible
+1502779474475	addons.xpi	DEBUG	Add-on jid0-OrDwsV63wgU4TFI6yptWagbfUE8@jetpack blocks e10s rollout.
+1502779474475	DeferredSave.extensions.json	DEBUG	Save changes
+1502779474475	addons.xpi-utils	DEBUG	Make addon app-system-defaults:screenshots@mozilla.org visible
+1502779474475	addons.xpi	DEBUG	Add-on jid0-OrDwsV63wgU4TFI6yptWagbfUE8@jetpack blocks e10s rollout.
+1502779474475	DeferredSave.extensions.json	DEBUG	Save changes
+1502779474475	addons.xpi-utils	DEBUG	Make addon app-global:{972ce4c6-7e08-4474-a285-3208198ce6fd} visible
+1502779474475	addons.xpi	DEBUG	Add-on jid0-OrDwsV63wgU4TFI6yptWagbfUE8@jetpack blocks e10s rollout.
+1502779474475	DeferredSave.extensions.json	DEBUG	Save changes
+1502779474476	addons.xpi	DEBUG	Updating XPIState for {"id":"jid0-OrDwsV63wgU4TFI6yptWagbfUE8@jetpack","syncGUID":"{d4904f07-86f1-458a-bbc7-b1044f1b0ceb}","location":"app-profile","version":"2.0.1-signed","type":"extension","internalName":null,"updateURL":null,"updateKey":null,"optionsURL":null,"optionsType":"2","aboutURL":null,"icons":{},"iconURL":null,"icon64URL":null,"defaultLocale":{"name":"WebDriver Element Locator","description":"This addon is designed to support and speed up the creation of WebDriver scripts by easing the location of web elements.","creator":"Andrew Fowler","homepageURL":null},"visible":true,"active":true,"userDisabled":false,"appDisabled":false,"descriptor":"C:\\Users\\SHIFU~1.YAN\\AppData\\Local\\Temp\\rust_mozprofile.xExKYVd6orZd\\extensions\\jid0-OrDwsV63wgU4TFI6yptWagbfUE8@jetpack.xpi","installDate":1499678345730,"updateDate":1502779471065,"applyBackgroundUpdates":1,"bootstrap":true,"skinnable":false,"size":49912,"sourceURI":null,"releaseNotesURI":null,"softDisabled":false,"foreignInstall":false,"hasBinaryComponents":false,"strictCompatibility":false,"locales":[],"targetApplications":[{"id":"{ec8030f7-c20a-464f-9b0e-13a3a9e97384}","minVersion":"26.0","maxVersion":"30.0"}],"targetPlatforms":[],"multiprocessCompatible":false,"signedState":1,"seen":true,"dependencies":[],"hasEmbeddedWebExtension":false,"mpcOptedOut":false,"userPermissions":null}
+1502779474476	addons.xpi	DEBUG	Updating XPIState for {"id":"commonfix@mozillaonline.com","syncGUID":"{5d4c4dcb-1767-40a6-98aa-44c14a0aee5d}","location":"app-profile","version":"1.52","type":"extension","internalName":null,"updateURL":"http://g-fox.cn/chinaedition/addons/commonfix/update.rdf?version=%ITEM_VERSION%","updateKey":"MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDeWvjaUcwQNMeAWcb1wdPKadNOUPB2Dp9/4SMWOshbJp7NcY+q46tt1rxwKJa+YVo7ohz5MxqWhxaQaAmEEhrUPIDNTvHEaBrpPMRXWGocSPd6reTvrncivMQpchW2wskMrYZUqtnslffxTKHvLuMnANzdzybzFkqaUDcYPbcEBwIDAQAB","optionsURL":null,"optionsType":null,"aboutURL":null,"icons":{},"iconURL":null,"icon64URL":null,"defaultLocale":{"name":"火狐修复工具","description":"让您方便的一键修复大部分浏览器使用中的常见问题，也可以针对您所遇到的问题选择手动修复、或是向我们报告问题获得帮助。网站无法登录、flash播放崩溃、迅雷下载无法关联等问题，帮您快速修复。","creator":"Mozilla Online Ltd.","homepageURL":"http://firefox.com.cn/"},"visible":true,"active":true,"userDisabled":false,"appDisabled":false,"descriptor":"C:\\Users\\SHIFU~1.YAN\\AppData\\Local\\Temp\\rust_mozprofile.xExKYVd6orZd\\extensions\\commonfix@mozillaonline.com.xpi","installDate":1501469148555,"updateDate":1502779471042,"applyBackgroundUpdates":1,"bootstrap":true,"skinnable":false,"size":117346,"sourceURI":null,"releaseNotesURI":null,"softDisabled":false,"foreignInstall":false,"hasBinaryComponents":false,"strictCompatibility":false,"locales":[],"targetApplications":[{"id":"{ec8030f7-c20a-464f-9b0e-13a3a9e97384}","minVersion":"29.0","maxVersion":"52.*"}],"targetPlatforms":[{"os":"WINNT","abi":null}],"multiprocessCompatible":true,"signedState":2,"seen":true,"dependencies":[],"hasEmbeddedWebExtension":false,"mpcOptedOut":false,"userPermissions":null}
+1502779474476	addons.xpi	DEBUG	Updating XPIState for {"id":"wx-assistant@mozillaonline.com","syncGUID":"{810e1b8c-2118-4f51-95ed-058a2faa6287}","location":"app-profile","version":"2.0.2","type":"webextension","internalName":null,"updateURL":"https://addons.firefox.com.cn/chinaedition/addons/updates.json","updateKey":null,"optionsURL":null,"optionsType":null,"aboutURL":null,"icons":{"32":"icons/icon-32.png","64":"icons/icon-64.png"},"iconURL":null,"icon64URL":null,"defaultLocale":{"name":"WeChat Helper by MoCoCN","description":"Access Web WeChat by one click","creator":null,"homepageURL":"http://www.firefox.com.cn/","developers":null,"translators":null,"contributors":null},"visible":true,"active":true,"userDisabled":false,"appDisabled":false,"descriptor":"C:\\Users\\SHIFU~1.YAN\\AppData\\Local\\Temp\\rust_mozprofile.xExKYVd6orZd\\extensions\\wx-assistant@mozillaonline.com.xpi","installDate":1501469148756,"updateDate":1502779471068,"applyBackgroundUpdates":1,"bootstrap":true,"skinnable":false,"size":23502,"sourceURI":null,"releaseNotesURI":null,"softDisabled":false,"foreignInstall":false,"hasBinaryComponents":false,"strictCompatibility":true,"locales":[{"name":"WeChat Helper by MoCoCN","description":"Access Web WeChat by one click","creator":null,"homepageURL":"http://www.firefox.com.cn/","developers":null,"translators":null,"contributors":null,"locales":["en-US"]},{"name":"微信网页版助手","description":"一键打开微信网页版，同时在微信有新消息时给出及时的消息提醒","creator":null,"homepageURL":"http://www.firefox.com.cn/","developers":null,"translators":null,"contributors":null,"locales":["zh-CN"]}],"targetApplications":[{"id":"toolkit@mozilla.org","minVersion":"48.0","maxVersion":null}],"targetPlatforms":[],"multiprocessCompatible":true,"signedState":1,"seen":true,"dependencies":[],"hasEmbeddedWebExtension":false,"userPermissions":{"hosts":["https://wx.qq.com/*"],"apis":[],"permissions":[]}}
+1502779474476	addons.xpi	DEBUG	Updating XPIState for {"id":"firebug@software.joehewitt.com","syncGUID":"{a44ab595-edd1-436b-a89e-e46f00ce0999}","location":"app-profile","version":"2.0.19","type":"extension","internalName":null,"updateURL":null,"updateKey":null,"optionsURL":null,"optionsType":null,"aboutURL":null,"icons":{},"iconURL":"chrome://firebug/skin/firebugBig.png","icon64URL":null,"defaultLocale":{"name":"Firebug","description":"Web Development Evolved. Firebug is free and open source software distributed under the BSD License.","creator":"Joe Hewitt","homepageURL":"http://www.getfirebug.com/","translators":["Leszek(teo)Zyczkowski (pl-PL)","markh (nl)","peter3 (sv-SE)","AlleyKat (da-DK)","Hector Zhao, lovelywcm (zh-CN)","Lukas Kucharczyk, Michal Kec (cs-CZ)","Team erweiterungen.de, ReinekeFux, Benedikt Langens, Sebastian Zartner (de-DE)","l0stintranslation, gonzalopirobutirro, Luigi Grilli (it-IT)","alexxed (ro-RO)","Nicolas Martin, Franck Marcia (fr-FR)","gLes (hu-HU)","Xavi Ivars - Softcatala (ca)","gezmen (tr-TR)","eternoendless (es-AR)","Dark Preacher (ru)","Tiago Oliveira, Diego de Carvalho Zimmermann, Alexandre Rapaki (pt-BR)","Juan Botias, Alvaro G. Vicario (es-ES)","Andriy Zhouck (uk-UA)","Hisateru Tanaka, k2jp (ja-JP)","Mohsen Shadroo (fa-IR)","Eduard Babayan (hy-AM)","Helder Magalhaes (pt-PT)","Tomaz Macus (sl-SI)","Stoyan Stefanov, Alexander Shopov (bg)","Kristjan Bjarni Guomundsson (is-IS)","NGUYEN Manh Hung (vi-VN)","Bwah (hr-HR)","Sonickydon (el)","David Gonzales (es)","DakSrbija (sr)","bootleq (zh-TW)","Asier Iturralde Sarasola, Julen Irazoki Oteiza (eu)"],"contributors":["John J. Barton (IBM Almaden)","Jan Odvarko (Mozilla Corp.)","Max Stepanov (Aptana Inc.)","Rob Campbell (Mozilla Corp.)","Hans Hillen (Paciello Group, Mozilla)","Curtis Bartley (Mozilla Corp.)","Mike Collins (IBM Almaden)","Kevin Decker","Mike Ratcliffe (Mozilla Corp.)","Hernan Rodriguez Colmeiro","Austin Andrews","Christoph Dorn","Steven Roussey (Illuminations for Developers)","Sebastian Zartner","Harutyun Amirjanyan","Simon Lindholm","Stampolidis Anastasios","Joe Walker (Mozilla Corp.)","Vladimir Zhuravlev","Farshid Beheshti","Leon Sorokin","Florent Fayolle","Hector Zhao","Bharath Thiruveedula","Nathan Mische","Belakhdar Abdeldjalil","Jakob Kaltenbrunner"]},"visible":true,"active":true,"userDisabled":false,"appDisabled":false,"descriptor":"C:\\Users\\SHIFU~1.YAN\\AppData\\Local\\Temp\\rust_mozprofile.xExKYVd6orZd\\extensions\\firebug@software.joehewitt.com.xpi","installDate":1501470776470,"updateDate":1502779471062,"applyBackgroundUpdates":1,"bootstrap":true,"skinnable":false,"size":9681994,"sourceURI":null,"releaseNotesURI":null,"softDisabled":false,"foreignInstall":false,"hasBinaryComponents":false,"strictCompatibility":false,"locales":[],"targetApplications":[{"id":"toolkit@mozilla.org","minVersion":"30.0a1","maxVersion":"54.0"},{"id":"{ec8030f7-c20a-464f-9b0e-13a3a9e97384}","minVersion":"30.0a1","maxVersion":"54.0"}],"targetPlatforms":[],"multiprocessCompatible":true,"signedState":2,"seen":true,"dependencies":[],"hasEmbeddedWebExtension":false,"mpcOptedOut":false,"userPermissions":null}
+1502779474476	addons.xpi	DEBUG	Updating XPIState for {"id":"FireXPath@pierre.tholence.com","syncGUID":"{53df6501-320d-4f43-93a5-17f92338ec1d}","location":"app-profile","version":"0.9.7.1.1-signed.1-signed","type":"extension","internalName":null,"updateURL":null,"updateKey":null,"optionsURL":null,"optionsType":null,"aboutURL":null,"icons":{},"iconURL":"chrome://firepath/content/FirePath.png","icon64URL":null,"defaultLocale":{"name":"FirePath","description":"FirePath is a Firebug extension that adds a development tool to edit, inspect and generate XPath 1.0 expressions, CSS 3 selectors and JQuery selectors.","creator":"Pierre Tholence","homepageURL":null,"contributors":["David Rees"]},"visible":true,"active":true,"userDisabled":false,"appDisabled":false,"descriptor":"C:\\Users\\SHIFU~1.YAN\\AppData\\Local\\Temp\\rust_mozprofile.xExKYVd6orZd\\extensions\\FireXPath@pierre.tholence.com.xpi","installDate":1501470798468,"updateDate":1502779471064,"applyBackgroundUpdates":1,"bootstrap":false,"skinnable":false,"size":168435,"sourceURI":null,"releaseNotesURI":null,"softDisabled":false,"foreignInstall":false,"hasBinaryComponents":false,"strictCompatibility":false,"locales":[],"targetApplications":[{"id":"{ec8030f7-c20a-464f-9b0e-13a3a9e97384}","minVersion":"4.0","maxVersion":"34.*"}],"targetPlatforms":[],"multiprocessCompatible":false,"signedState":2,"seen":true,"dependencies":[],"hasEmbeddedWebExtension":false,"mpcOptedOut":false,"userPermissions":null}
+1502779474476	addons.xpi	DEBUG	Updating XPIState for {"id":"easyscreenshot@mozillaonline.com","syncGUID":"{1796850c-c919-4443-b30c-7f770f7c2727}","location":"app-profile","version":"2.55","type":"extension","internalName":null,"updateURL":null,"updateKey":null,"optionsURL":null,"optionsType":null,"aboutURL":null,"icons":{"32":"icon.png","48":"icon.png","64":"icon64.png"},"iconURL":null,"icon64URL":null,"defaultLocale":{"name":"Easy Screenshot","description":"You can capture a screen shot by selecting an area or capture the whole/visible webpage. Then edit and save it as an image file.","creator":"Mozilla Online","homepageURL":"http://www.firefox.com.cn/"},"visible":true,"active":true,"userDisabled":false,"appDisabled":false,"descriptor":"C:\\Users\\SHIFU~1.YAN\\AppData\\Local\\Temp\\rust_mozprofile.xExKYVd6orZd\\extensions\\easyscreenshot@mozillaonline.com.xpi","installDate":1501469148731,"updateDate":1502779471047,"applyBackgroundUpdates":1,"bootstrap":true,"skinnable":false,"size":175130,"sourceURI":null,"releaseNotesURI":null,"softDisabled":false,"foreignInstall":false,"hasBinaryComponents":false,"strictCompatibility":false,"locales":[{"locales":["zh-CN"],"name":"网页截图","description":"方便的截图工具，支持任意选定区域截图、全网页截图等多种截图方式，并提供必要的图片编辑功能。","creator":"Mozilla Online","homepageURL":"http://www.firefox.com.cn/"},{"locales":["zh-TW"],"name":"網頁截圖","description":"方便的截圖工具，支持任意選定區域截圖、全網頁截圖等多種截圖方式，并提供必要的圖片編輯功能。","creator":"Mozilla Online","homepageURL":null}],"targetApplications":[{"id":"{ec8030f7-c20a-464f-9b0e-13a3a9e97384}","minVersion":"51.0","maxVersion":"55.*"}],"targetPlatforms":[],"multiprocessCompatible":true,"signedState":2,"seen":true,"dependencies":[],"hasEmbeddedWebExtension":true,"mpcOptedOut":false,"userPermissions":null}
+1502779474476	addons.xpi	DEBUG	Updating XPIState for {"id":"cehomepage@mozillaonline.com","syncGUID":"{74163769-9098-4247-ba06-1853692e1b0f}","location":"app-profile","version":"1.55","type":"extension","internalName":null,"updateURL":"http://g-fox.cn/chinaedition/addons/cehomepage-iii/update.rdf?version=%ITEM_VERSION%&pt=%CEHP_PREF_TRACKING%","updateKey":"MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCd77P/ko6LTPMWcIjA5+0AJ7Y2w1CA31UYNTLA6OMwc9kcvO407SrE649A1ZUOi8bDPvJ6/KqVU9zPmv1XY1SjpEF8RlXP5SQ4KXirH4wnBk94cklYJTeDVuGOvCZS4KNazsjibERhRE7oGxg3X+rw+Ifu14AmAqXm4lyMrYIt/QIDAQAB","optionsURL":"chrome://ntab/content/options.xul","optionsType":null,"aboutURL":null,"icons":{},"iconURL":null,"icon64URL":null,"defaultLocale":{"name":"Firefox Homepage","description":"Customizied Home Page for Firefox","creator":"Mozilla Online Limited","homepageURL":"http://www.firefox.com.cn/","contributors":["Leding Li","Ray Cheung","Xuan Xie","jiangwei1212@gmail.com","Wennan Zhu","Amax Guan"]},"visible":true,"active":true,"userDisabled":false,"appDisabled":false,"descriptor":"C:\\Users\\SHIFU~1.YAN\\AppData\\Local\\Temp\\rust_mozprofile.xExKYVd6orZd\\extensions\\cehomepage@mozillaonline.com","installDate":1501469148471,"updateDate":1502779471167,"applyBackgroundUpdates":1,"bootstrap":false,"skinnable":false,"size":784501,"sourceURI":null,"releaseNotesURI":null,"softDisabled":false,"foreignInstall":false,"hasBinaryComponents":false,"strictCompatibility":false,"locales":[{"locales":["zh-CN"],"name":"火狐主页","description":"火狐定制主页，包括最近访问页面、最常访问页面以及新标签页等","creator":"Mozilla Online Limited","homepageURL":"http://www.firefox.com.cn/"}],"targetApplications":[{"id":"{ec8030f7-c20a-464f-9b0e-13a3a9e97384}","minVersion":"38.0","maxVersion":"55.*"}],"targetPlatforms":[],"multiprocessCompatible":true,"signedState":2,"seen":true,"dependencies":[],"hasEmbeddedWebExtension":false,"mpcOptedOut":false,"userPermissions":null}
+1502779474476	addons.xpi	DEBUG	Updating XPIState for {"id":"cpmanager@mozillaonline.com","syncGUID":"{493cb50c-7dd2-4f8b-bc44-9878b816a189}","location":"app-profile","version":"2.55","type":"extension","internalName":null,"updateURL":"http://g-fox.cn/chinaedition/addons/cpmanager/update.rdf?version=%ITEM_VERSION%","updateKey":"MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC2zWwTHIR23xreMABqMJXj1YrFowjiaBieTNqC2bE9PImSaMBxmYqrQ/UryquunGB0LJVE6tzzdioK9KFp+8ZO4eZL0fpxA9I+8mp+g3MTwqMVZD5ma3qwEGDngATaJwlcWY5xmrWcWNUgogP7n6JYuw0Giuc7crDNK3n1/nCbhwIDAQAB","optionsURL":"chrome://cmsafeflag/content/options.xul","optionsType":null,"aboutURL":null,"icons":{},"iconURL":null,"icon64URL":null,"defaultLocale":{"name":"Addons Manager","description":"To manage the addons package in Firefox.","creator":"Mozilla Online Limited","homepageURL":"http://www.firefox.com.cn/","contributors":["Conchshell","Ray Cheung","Xuan Xie","Jiao Feng","Rui You"]},"visible":true,"active":true,"userDisabled":false,"appDisabled":false,"descriptor":"C:\\Users\\SHIFU~1.YAN\\AppData\\Local\\Temp\\rust_mozprofile.xExKYVd6orZd\\extensions\\cpmanager@mozillaonline.com.xpi","installDate":1501469148571,"updateDate":1502779471045,"applyBackgroundUpdates":1,"bootstrap":false,"skinnable":false,"size":492668,"sourceURI":null,"releaseNotesURI":null,"softDisabled":false,"foreignInstall":false,"hasBinaryComponents":false,"strictCompatibility":false,"locales":[{"locales":["zh-CN"],"name":"附加组件管理器","description":"用来管理火狐的附加组件系统。","creator":"Mozilla Online Limited","homepageURL":"http://www.firefox.com.cn/"}],"targetApplications":[{"id":"{ec8030f7-c20a-464f-9b0e-13a3a9e97384}","minVersion":"38.0","maxVersion":"55.*"}],"targetPlatforms":[],"multiprocessCompatible":true,"signedState":2,"seen":true,"dependencies":[],"hasEmbeddedWebExtension":false,"mpcOptedOut":false,"userPermissions":null}
+1502779474477	addons.xpi	DEBUG	Updating XPIState for {"id":"tabtweak@mozillaonline.com","syncGUID":"{a1efdbd8-7a22-4c57-af33-ead910c1cfc0}","location":"app-profile","version":"4.55","type":"extension","internalName":null,"updateURL":"http://g-fox.cn/chinaedition/addons/tabtweak/update.rdf?version=%ITEM_VERSION%","updateKey":"MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDAvclCQ8nXMVB+UZpw2bLa7Qep6UO1YV6quUpw0RBDQgh5BMX6d4VaW/ZwMts7dFRA/7+yfjr3DTG036ldlRdnho6EztgDZKpLuU5tEORc9JfVspqb1Yw7ePRrKuc0vPyq1+2f1eEuXmikK3DGImd2lL9AoNYwHj7/+ERhntRQsQIDAQAB","optionsURL":null,"optionsType":null,"aboutURL":null,"icons":{"32":"icon.png","48":"icon.png","64":"icon64.png"},"iconURL":null,"icon64URL":null,"defaultLocale":{"name":"Tab Tweak","description":"Tweak tab browsing by setting default behaviors.","creator":"Mozilla Online Limited","homepageURL":"http://firefox.com.cn","contributors":["Rui You"]},"visible":true,"active":true,"userDisabled":false,"appDisabled":false,"descriptor":"C:\\Users\\SHIFU~1.YAN\\AppData\\Local\\Temp\\rust_mozprofile.xExKYVd6orZd\\extensions\\tabtweak@mozillaonline.com.xpi","installDate":1501469148740,"updateDate":1502779471066,"applyBackgroundUpdates":1,"bootstrap":false,"skinnable":false,"size":21717,"sourceURI":null,"releaseNotesURI":null,"softDisabled":false,"foreignInstall":false,"hasBinaryComponents":false,"strictCompatibility":true,"locales":[{"locales":["zh-CN"],"name":"标签页优化","description":"设置打开链接和关闭标签的默认行为，方便使用。","creator":"Mozilla Online Limited","homepageURL":"http://www.firefox.com.cn/","contributors":["Rui You"]}],"targetApplications":[{"id":"{ec8030f7-c20a-464f-9b0e-13a3a9e97384}","minVersion":"35.0","maxVersion":"55.*"}],"targetPlatforms":[],"multiprocessCompatible":true,"signedState":2,"seen":true,"dependencies":[],"hasEmbeddedWebExtension":false,"mpcOptedOut":false,"userPermissions":null}
+1502779474477	addons.xpi	DEBUG	Updating XPIState for {"id":"coba@mozilla.com.cn","syncGUID":"{13ff7182-4c26-4a03-abe6-8addbc9808a8}","location":"app-profile","version":"3.55","type":"extension","internalName":null,"updateURL":"http://g-fox.cn/chinaedition/addons/coba/update.rdf","updateKey":"MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDI9oBz+hSfHlNBrgdtc60mLujdpK4sCVDH1rD+1bh7++ni8ltJD0trCfhUKKiC234iMhHBgcr/bD9kYUbv7nlCz0lqPKM3DZC4eSgLsk8m077fk1Mmob3Pw5ZZlbCO9PWmwH2h/n9oUdx1YvrKN1+e2cocckcw4uGqalFGfYa9ywIDAQAB","optionsURL":null,"optionsType":null,"aboutURL":null,"icons":{"32":"icon.png","48":"icon.png","64":"icon64.png"},"iconURL":null,"icon64URL":null,"defaultLocale":{"name":"COBA","description":"China Online Banking Assistant","creator":"Mozilla Online Limited","homepageURL":"http://www.firefox.com.cn/"},"visible":true,"active":true,"userDisabled":false,"appDisabled":false,"descriptor":"C:\\Users\\SHIFU~1.YAN\\AppData\\Local\\Temp\\rust_mozprofile.xExKYVd6orZd\\extensions\\coba@mozilla.com.cn.xpi","installDate":1501469148544,"updateDate":1502779471041,"applyBackgroundUpdates":1,"bootstrap":true,"skinnable":false,"size":76380,"sourceURI":null,"releaseNotesURI":null,"softDisabled":false,"foreignInstall":false,"hasBinaryComponents":false,"strictCompatibility":false,"locales":[{"locales":["zh-CN"],"name":"网银支付助手","description":"为火狐用户提供支付帮助","creator":"Mozilla Online Limited","homepageURL":"http://www.firefox.com.cn/"}],"targetApplications":[{"id":"{ec8030f7-c20a-464f-9b0e-13a3a9e97384}","minVersion":"54.0","maxVersion":"55.*"}],"targetPlatforms":[{"os":"WINNT","abi":null}],"multiprocessCompatible":true,"signedState":2,"seen":true,"dependencies":[],"hasEmbeddedWebExtension":true,"mpcOptedOut":false,"userPermissions":null}
+1502779474478	addons.xpi	DEBUG	Updating XPIState for {"id":"aushelper@mozilla.org","syncGUID":"{a39aa217-41e8-44eb-9d7d-f4916b5c7347}","location":"app-system-defaults","version":"2.0","type":"extension","internalName":null,"updateURL":null,"updateKey":null,"optionsURL":null,"optionsType":null,"aboutURL":null,"icons":{},"iconURL":null,"icon64URL":null,"defaultLocale":{"name":"Application Update Service Helper","description":"Sets value(s) in the update url based on custom checks.","creator":null,"homepageURL":null},"visible":true,"active":true,"userDisabled":false,"appDisabled":false,"descriptor":"D:\\Program Files\\Mozilla Firefox\\browser\\features\\aushelper@mozilla.org.xpi","installDate":1496964922232,"updateDate":1499398438846,"applyBackgroundUpdates":1,"bootstrap":true,"skinnable":false,"size":8488,"sourceURI":null,"releaseNotesURI":null,"softDisabled":false,"foreignInstall":false,"hasBinaryComponents":false,"strictCompatibility":false,"locales":[],"targetApplications":[{"id":"{ec8030f7-c20a-464f-9b0e-13a3a9e97384}","minVersion":"54.0.1","maxVersion":"54.*"}],"targetPlatforms":[],"multiprocessCompatible":true,"seen":true,"dependencies":[],"hasEmbeddedWebExtension":false,"mpcOptedOut":false,"userPermissions":null}
+1502779474478	addons.xpi	DEBUG	Updating XPIState for {"id":"e10srollout@mozilla.org","syncGUID":"{0ac0811b-aab2-4f51-b0a0-562998005dc8}","location":"app-system-defaults","version":"1.50","type":"extension","internalName":null,"updateURL":null,"updateKey":null,"optionsURL":null,"optionsType":null,"aboutURL":null,"icons":{},"iconURL":null,"icon64URL":null,"defaultLocale":{"name":"Multi-process staged rollout","description":"Staged rollout of Firefox multi-process feature.","creator":null,"homepageURL":null},"visible":true,"active":true,"userDisabled":false,"appDisabled":false,"descriptor":"D:\\Program Files\\Mozilla Firefox\\browser\\features\\e10srollout@mozilla.org.xpi","installDate":1496964922233,"updateDate":1499398438846,"applyBackgroundUpdates":1,"bootstrap":true,"skinnable":false,"size":12519,"sourceURI":null,"releaseNotesURI":null,"softDisabled":false,"foreignInstall":false,"hasBinaryComponents":false,"strictCompatibility":false,"locales":[],"targetApplications":[{"id":"{ec8030f7-c20a-464f-9b0e-13a3a9e97384}","minVersion":"54.0.1","maxVersion":"54.*"}],"targetPlatforms":[],"multiprocessCompatible":true,"seen":true,"dependencies":[],"hasEmbeddedWebExtension":false,"mpcOptedOut":false,"userPermissions":null}
+1502779474478	addons.xpi	DEBUG	Updating XPIState for {"id":"firefox@getpocket.com","syncGUID":"{c80c5e04-76b3-485a-9f11-365559a4d4f3}","location":"app-system-defaults","version":"1.0.5","type":"extension","internalName":null,"updateURL":null,"updateKey":null,"optionsURL":null,"optionsType":null,"aboutURL":null,"icons":{},"iconURL":null,"icon64URL":null,"defaultLocale":{"name":"Pocket","description":"When you find something you want to view later, put it in Pocket.","creator":null,"homepageURL":null},"visible":true,"active":true,"userDisabled":false,"appDisabled":false,"descriptor":"D:\\Program Files\\Mozilla Firefox\\browser\\features\\firefox@getpocket.com.xpi","installDate":1496964922284,"updateDate":1499398438846,"applyBackgroundUpdates":1,"bootstrap":true,"skinnable":false,"size":913952,"sourceURI":null,"releaseNotesURI":null,"softDisabled":false,"foreignInstall":false,"hasBinaryComponents":false,"strictCompatibility":false,"locales":[],"targetApplications":[{"id":"{ec8030f7-c20a-464f-9b0e-13a3a9e97384}","minVersion":"54.0.1","maxVersion":"54.*"}],"targetPlatforms":[],"multiprocessCompatible":true,"seen":true,"dependencies":[],"hasEmbeddedWebExtension":false,"mpcOptedOut":false,"userPermissions":null}
+1502779474478	addons.xpi	DEBUG	Updating XPIState for {"id":"webcompat@mozilla.org","syncGUID":"{df5e0aeb-f3e0-4d6b-aa12-254c76d153fc}","location":"app-system-defaults","version":"1.1","type":"extension","internalName":null,"updateURL":null,"updateKey":null,"optionsURL":null,"optionsType":null,"aboutURL":null,"icons":{},"iconURL":null,"icon64URL":null,"defaultLocale":{"name":"Web Compat","description":"Urgent post-release fixes for web compatibility.","creator":null,"homepageURL":null},"visible":true,"active":true,"userDisabled":false,"appDisabled":false,"descriptor":"D:\\Program Files\\Mozilla Firefox\\browser\\features\\webcompat@mozilla.org.xpi","installDate":1496964922348,"updateDate":1499398438846,"applyBackgroundUpdates":1,"bootstrap":true,"skinnable":false,"size":9006,"sourceURI":null,"releaseNotesURI":null,"softDisabled":false,"foreignInstall":false,"hasBinaryComponents":false,"strictCompatibility":false,"locales":[],"targetApplications":[{"id":"{ec8030f7-c20a-464f-9b0e-13a3a9e97384}","minVersion":"54.0.1","maxVersion":"54.*"}],"targetPlatforms":[],"multiprocessCompatible":true,"seen":true,"dependencies":[],"hasEmbeddedWebExtension":false,"mpcOptedOut":false,"userPermissions":null}
+1502779474478	addons.xpi	DEBUG	Updating XPIState for {"id":"screenshots@mozilla.org","syncGUID":"{ca8303c0-3834-424e-ad06-d28329567fc4}","location":"app-system-defaults","version":"6.6.0","type":"extension","internalName":null,"updateURL":null,"updateKey":null,"optionsURL":null,"optionsType":null,"aboutURL":null,"icons":{},"iconURL":null,"icon64URL":null,"defaultLocale":{"name":"Firefox Screenshots","description":null,"creator":null,"homepageURL":"https://pageshot.net/"},"visible":true,"active":true,"userDisabled":false,"appDisabled":false,"descriptor":"D:\\Program Files\\Mozilla Firefox\\browser\\features\\screenshots@mozilla.org.xpi","installDate":1496964922345,"updateDate":1496964922345,"applyBackgroundUpdates":1,"bootstrap":true,"skinnable":false,"size":716271,"sourceURI":null,"releaseNotesURI":null,"softDisabled":false,"foreignInstall":false,"hasBinaryComponents":false,"strictCompatibility":false,"locales":[],"targetApplications":[{"id":"{ec8030f7-c20a-464f-9b0e-13a3a9e97384}","minVersion":"51.0a1","maxVersion":"*"}],"targetPlatforms":[],"multiprocessCompatible":true,"seen":true,"dependencies":[],"hasEmbeddedWebExtension":false,"mpcOptedOut":false,"userPermissions":null}
+1502779474478	addons.xpi	DEBUG	Updating XPIState for {"id":"{972ce4c6-7e08-4474-a285-3208198ce6fd}","syncGUID":"{f1c94a61-6363-4f2a-b728-e429da610fce}","location":"app-global","version":"54.0.1","type":"theme","internalName":"classic/1.0","updateURL":null,"updateKey":null,"optionsURL":null,"optionsType":null,"aboutURL":null,"icons":{},"iconURL":"chrome://browser/content/default-theme-icon.svg","icon64URL":null,"defaultLocale":{"name":"Default","description":"The default theme.","creator":"Mozilla","homepageURL":null,"contributors":["Mozilla Contributors"]},"visible":true,"active":true,"userDisabled":false,"appDisabled":false,"descriptor":"D:\\Program Files\\Mozilla Firefox\\browser\\extensions\\{972ce4c6-7e08-4474-a285-3208198ce6fd}.xpi","installDate":1496964922230,"updateDate":1499398438846,"applyBackgroundUpdates":1,"skinnable":true,"size":8207,"sourceURI":null,"releaseNotesURI":null,"softDisabled":false,"foreignInstall":false,"hasBinaryComponents":false,"strictCompatibility":true,"locales":[],"targetApplications":[{"id":"{ec8030f7-c20a-464f-9b0e-13a3a9e97384}","minVersion":"54.0.1","maxVersion":"54.0.1"}],"targetPlatforms":[],"seen":true,"dependencies":[],"hasEmbeddedWebExtension":false,"userPermissions":null}
+1502779474479	addons.xpi	DEBUG	Add-on jid0-OrDwsV63wgU4TFI6yptWagbfUE8@jetpack blocks e10s rollout.
+1502779474479	DeferredSave.extensions.json	DEBUG	Save changes
+1502779474479	addons.xpi	DEBUG	Updating database with changes to installed add-ons
+1502779474479	addons.xpi-utils	DEBUG	Updating add-on states
+1502779474482	addons.xpi-utils	DEBUG	Writing add-ons list
+1502779474488	addons.xpi	DEBUG	Registering manifest for D:\Program Files\Mozilla Firefox\browser\features\aushelper@mozilla.org.xpi
+1502779474489	addons.xpi	DEBUG	Loading bootstrap scope from D:\Program Files\Mozilla Firefox\browser\features\aushelper@mozilla.org.xpi
+1502779474491	addons.xpi	DEBUG	Calling bootstrap method startup on aushelper@mozilla.org version 2.0
+1502779474492	addons.xpi	DEBUG	Registering manifest for C:\Users\SHIFU~1.YAN\AppData\Local\Temp\rust_mozprofile.xExKYVd6orZd\extensions\coba@mozilla.com.cn.xpi
+1502779474493	addons.xpi	DEBUG	Calling bootstrap method startup on coba@mozilla.com.cn version 3.55
+1502779474495	addons.xpi	DEBUG	Registering manifest for C:\Users\SHIFU~1.YAN\AppData\Local\Temp\rust_mozprofile.xExKYVd6orZd\extensions\commonfix@mozillaonline.com.xpi
+1502779474495	addons.xpi	DEBUG	Calling bootstrap method startup on commonfix@mozillaonline.com version 1.52
+1502779474496	addons.xpi	DEBUG	Registering manifest for D:\Program Files\Mozilla Firefox\browser\features\e10srollout@mozilla.org.xpi
+1502779474496	addons.xpi	DEBUG	Loading bootstrap scope from D:\Program Files\Mozilla Firefox\browser\features\e10srollout@mozilla.org.xpi
+1502779474498	addons.xpi	DEBUG	Calling bootstrap method startup on e10srollout@mozilla.org version 1.50
+1502779474499	addons.xpi	DEBUG	Registering manifest for C:\Users\SHIFU~1.YAN\AppData\Local\Temp\rust_mozprofile.xExKYVd6orZd\extensions\easyscreenshot@mozillaonline.com.xpi
+1502779474499	addons.xpi	DEBUG	Calling bootstrap method startup on easyscreenshot@mozillaonline.com version 2.55
+1502779474500	addons.xpi	DEBUG	Registering manifest for C:\Users\SHIFU~1.YAN\AppData\Local\Temp\rust_mozprofile.xExKYVd6orZd\extensions\firebug@software.joehewitt.com.xpi
+1502779474501	addons.xpi	DEBUG	Calling bootstrap method startup on firebug@software.joehewitt.com version 2.0.19
+1502779474508	addons.xpi	DEBUG	Registering manifest for D:\Program Files\Mozilla Firefox\browser\features\firefox@getpocket.com.xpi
+1502779474509	addons.xpi	DEBUG	Loading bootstrap scope from D:\Program Files\Mozilla Firefox\browser\features\firefox@getpocket.com.xpi
+1502779474511	addons.xpi	DEBUG	Calling bootstrap method startup on firefox@getpocket.com version 1.0.5
+1502779474512	addons.xpi	DEBUG	Registering manifest for C:\Users\SHIFU~1.YAN\AppData\Local\Temp\rust_mozprofile.xExKYVd6orZd\extensions\jid0-OrDwsV63wgU4TFI6yptWagbfUE8@jetpack.xpi
+1502779474512	addons.xpi	DEBUG	Calling bootstrap method startup on jid0-OrDwsV63wgU4TFI6yptWagbfUE8@jetpack version 2.0.1-signed
+1502779474541	addons.xpi	DEBUG	Registering manifest for D:\Program Files\Mozilla Firefox\browser\features\screenshots@mozilla.org.xpi
+1502779474541	addons.xpi	DEBUG	Loading bootstrap scope from D:\Program Files\Mozilla Firefox\browser\features\screenshots@mozilla.org.xpi
+1502779474543	addons.xpi	DEBUG	Calling bootstrap method startup on screenshots@mozilla.org version 6.6.0
+1502779474544	addons.xpi	DEBUG	Registering manifest for D:\Program Files\Mozilla Firefox\browser\features\webcompat@mozilla.org.xpi
+1502779474544	addons.xpi	DEBUG	Loading bootstrap scope from D:\Program Files\Mozilla Firefox\browser\features\webcompat@mozilla.org.xpi
+1502779474546	addons.xpi	DEBUG	Calling bootstrap method startup on webcompat@mozilla.org version 1.1
+1502779474548	addons.xpi	DEBUG	Calling bootstrap method startup on wx-assistant@mozillaonline.com version 2.0.2
+1502779474550	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1502779474550	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1502779474550	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1502779474550	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1502779474550	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1502779474551	addons.manager	DEBUG	Starting provider: GMPProvider
+1502779474558	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1502779474559	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1502779474559	addons.manager	DEBUG	Starting provider: PluginProvider
+1502779474559	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1502779474559	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1502779474559	addons.manager	DEBUG	Completed startup sequence
+[GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64.dll v=0.0.0.0
+JavaScript error: resource://cpmanager-clv/CCLVData.jsm, line 46: NS_NOINTERFACE: Component returned failure code: 0x80004002 (NS_NOINTERFACE) [nsIFileURL.file]
+1502779474819	addons.manager	DEBUG	Starting provider: <unnamed-provider>
+1502779474819	addons.manager	DEBUG	Registering shutdown blocker for <unnamed-provider>
+1502779474819	addons.manager	DEBUG	Provider finished startup: <unnamed-provider>
+1502779474830	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1502779474830	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1502779474831	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+1502779474832	DeferredSave.extensions.json	DEBUG	Starting write
+JavaScript error: resource://cmsafeflag/SkipSBData.jsm, line 46: NS_NOINTERFACE: Component returned failure code: 0x80004002 (NS_NOINTERFACE) [nsIFileURL.file]
+1502779474942	addons.webextension.wx-assistant@mozillaonline.com	WARN	Please specify whether you want browser_style or not in your browser_action options.
+1502779475179	DeferredSave.extensions.json	DEBUG	Write succeeded
+JavaScript error: resource://cmsafeflag/SkipSBData.jsm, line 85: TypeError: aFile is undefined
+JavaScript error: resource://cmsafeflag/SkipSBData.jsm, line 85: TypeError: aFile is undefined
+JavaScript error: resource://cmsafeflag/SkipSBData.jsm, line 85: TypeError: aFile is undefined
+JavaScript error: resource://cmsafeflag/SkipSBData.jsm, line 85: TypeError: aFile is undefined
+JavaScript error: resource://cmsafeflag/SkipSBData.jsm, line 85: TypeError: aFile is undefined
+1502779476374	Marionette	INFO	Listening on port 59730
+[GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64.dll v=0.0.0.0
+1502779476860	Marionette	WARN	TLS certificate errors will be ignored for this session
+1502779477201	Marionette	DEBUG	loaded listener.js
+1502779477351	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+JavaScript error: resource://cmsafeflag/SkipSBData.jsm, line 85: TypeError: aFile is undefined
+1502779477525	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1502779477527	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript error: resource://cmsafeflag/SkipSBData.jsm, line 85: TypeError: aFile is undefined
+JavaScript error: resource://cmsafeflag/SkipSBData.jsm, line 85: TypeError: aFile is undefined
+JavaScript error: resource://cmsafeflag/SkipSBData.jsm, line 85: TypeError: aFile is undefined
+JavaScript error: resource://cmsafeflag/SkipSBData.jsm, line 85: TypeError: aFile is undefined
+JavaScript error: resource://cmsafeflag/SkipSBData.jsm, line 85: TypeError: aFile is undefined
+JavaScript error: resource://cmsafeflag/SkipSBData.jsm, line 85: TypeError: aFile is undefined
+JavaScript error: resource://cmsafeflag/SkipSBData.jsm, line 85: TypeError: aFile is undefined
+JavaScript error: resource://cmsafeflag/SkipSBData.jsm, line 85: TypeError: aFile is undefined
+JavaScript error: resource://cmsafeflag/SkipSBData.jsm, line 85: TypeError: aFile is undefined
+JavaScript error: resource://cmsafeflag/SkipSBData.jsm, line 85: TypeError: aFile is undefined
+JavaScript error: resource://cmsafeflag/SkipSBData.jsm, line 85: TypeError: aFile is undefined
+JavaScript error: resource://cmsafeflag/SkipSBData.jsm, line 85: TypeError: aFile is undefined
+JavaScript error: resource://cmsafeflag/SkipSBData.jsm, line 85: TypeError: aFile is undefined
+JavaScript error: resource://cmsafeflag/SkipSBData.jsm, line 85: TypeError: aFile is undefined
+JavaScript error: resource://cmsafeflag/SkipSBData.jsm, line 85: TypeError: aFile is undefined
+JavaScript error: resource://cmsafeflag/SkipSBData.jsm, line 85: TypeError: aFile is undefined
+JavaScript error: resource://cmsafeflag/SkipSBData.jsm, line 85: TypeError: aFile is undefined
+JavaScript error: resource://cmsafeflag/SkipSBData.jsm, line 85: TypeError: aFile is undefined
+JavaScript error: resource://cmsafeflag/SkipSBData.jsm, line 85: TypeError: aFile is undefined
+1502779480549	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://plms.3jyun.com/login.html"
+1502779480559	Marionette	DEBUG	Received DOM event "pageshow" for "https://plms.3jyun.com/login.html"
+JavaScript error: resource://cmsafeflag/SkipSBData.jsm, line 85: TypeError: aFile is undefined
+JavaScript error: resource://cmsafeflag/SkipSBData.jsm, line 85: TypeError: aFile is undefined
+JavaScript error: resource://cmsafeflag/SkipSBData.jsm, line 85: TypeError: aFile is undefined
+JavaScript error: resource://cmsafeflag/SkipSBData.jsm, line 85: TypeError: aFile is undefined
+JavaScript error: resource://cmsafeflag/SkipSBData.jsm, line 85: TypeError: aFile is undefined
+JavaScript error: resource://cmsafeflag/SkipSBData.jsm, line 85: TypeError: aFile is undefined
+1502779481334	Marionette	DEBUG	Received DOM event "beforeunload" for "https://plms.3jyun.com/login.html"
+JavaScript error: resource://cmsafeflag/SkipSBData.jsm, line 85: TypeError: aFile is undefined
+1502779481361	Marionette	DEBUG	Received DOM event "pagehide" for "https://plms.3jyun.com/l1502779811872	addons.xpi	DEBUG	Calling bootstrap method shutdown on wx-assistant@mozillaonline.com version 2.0.2
+1502779811924	addons.xpi	DEBUG	Calling bootstrap method shutdown on webcompat@mozilla.org version 1.1
+1502779811925	addons.xpi	DEBUG	Calling bootstrap method shutdown on screenshots@mozilla.org version 6.6.0
+1502779811926	addons.xpi	DEBUG	Calling bootstrap method shutdown on jid0-OrDwsV63wgU4TFI6yptWagbfUE8@jetpack version 2.0.1-signed
+1502779811979	addons.xpi	DEBUG	Calling bootstrap method shutdown on firefox@getpocket.com version 1.0.5
+1502779811979	addons.xpi	DEBUG	Calling bootstrap method shutdown on firebug@software.joehewitt.com version 2.0.19
+1502779812032	addons.xpi	DEBUG	Calling bootstrap method shutdown on easyscreenshot@mozillaonline.com version 2.55
+1502779812033	addons.xpi	DEBUG	Calling bootstrap method shutdown on e10srollout@mozilla.org version 1.50
+1502779812033	addons.xpi	DEBUG	Calling bootstrap method shutdown on commonfix@mozillaonline.com version 1.52
+console.error: 
+  Message: ReferenceError: reason is not defined
+  Stack:
+    exports.onUnload@resource://gre/modules/commonjs/toolkit/loader.js -> resource://commonfix-at-mozillaonline-dot-com/lib/main.js:316:1
+unload/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/system/unload.js:79:9
+unload@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/system/unload.js:73:3
+onunload@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/system/unload.js:99:5
+observe@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/system/events.js:81:7
+unload@resource://gre/modules/commonjs/toolkit/loader.js:956:3
+unload/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/addon/bootstrap.js:156:9
+unload@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/addon/bootstrap.js:152:12
+shutdown@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/addon/bootstrap.js:149:12
+callBootstrapMethod@resource://gre/modules/addons/XPIProvider.jsm:4982:11
+observe@resource://gre/modules/addons/XPIProvider.jsm:2917:15
+permitUnload@chrome://global/content/bindings/remote-browser.xml:357:13
+CanCloseWindow@chrome://browser/content/browser.js:6431:36
+WindowIsClosing@chrome://browser/content/browser.js:6450:7
+onclose@chrome://browser/content/browser.xul:1:8
+
+1502779812326	addons.xpi	DEBUG	Calling bootstrap method shutdown on coba@mozilla.com.cn version 3.55
+1502779812327	addons.xpi	DEBUG	Calling bootstrap method shutdown on aushelper@mozilla.org version 2.0
+JavaScript error: chrome://browser/content/tabbrowser.xml, line 3386: TypeError: this.tabs is undefined
+[GPU 5552] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w64-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1502779813631	addons.manager	DEBUG	shutdown
+1502779813633	addons.manager	DEBUG	Calling shutdown blocker for XPIProvider
+1502779813633	addons.xpi	DEBUG	shutdown
+1502779813633	addons.xpi-utils	DEBUG	shutdown
+1502779813634	addons.manager	DEBUG	Calling shutdown blocker for LightweightThemeManager
+1502779813634	addons.manager	DEBUG	Calling shutdown blocker for GMPProvider
+1502779813636	addons.manager	DEBUG	Calling shutdown blocker for PluginProvider
+1502779813636	addons.manager	DEBUG	Calling shutdown blocker for <unnamed-provider>
+1502779813638	addons.manager	DEBUG	Calling shutdown blocker for PreviousExperimentProvider
+1502779813639	addons.xpi	DEBUG	Notifying XPI shutdown observers
+1502779813641	addons.manager	DEBUG	Async provider shutdown done
+1502779814287	Marionette	INFO	Ceased listening
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+esource://cmsafeflag/SkipSBData.jsm, line 85: TypeError: aFile is undefined
+JavaScript error: resource://cmsafeflag/SkipSBData.jsm, line 85: TypeError: aFile is undefined
+JavaScript error: resource://cmsafeflag/SkipSBData.jsm, line 85: TypeError: aFile is undefined
+JavaScript error: resource://cmsafeflag/SkipSBData.jsm, line 85: TypeError: aFile is undefined
+JavaScript error: resource://cmsafeflag/SkipSBData.jsm, line 85: TypeError: aFile is undefined
+JavaScript error: resource://cmsafeflag/SkipSBData.jsm, line 85: TypeError: aFile is undefined
+JavaScript error: resource://cmsafeflag/SkipSBData.jsm, line 85: TypeError: aFile is undefined
+JavaScript error: resource://cmsafeflag/SkipSBData.jsm, line 85: TypeError: aFile is undefined
+JavaScript error: resource://cmsafeflag/SkipSBData.jsm, line 85: TypeError: aFile is undefined
+JavaScript error: resource://cmsafeflag/SkipSBData.jsm, line 85: TypeError: aFile is undefined
+1502779805292	addons.xpi	DEBUG	Calling bootstrap method shutdown on wx-assistant@mozillaonline.com version 2.0.2
+1502779805306	addons.xpi	DEBUG	Calling bootstrap method shutdown on webcompat@mozilla.org version 1.1
+1502779805306	addons.xpi	DEBUG	Calling bootstrap method shutdown on screenshots@mozilla.org version 6.6.0
+1502779805308	addons.xpi	DEBUG	Calling bootstrap method shutdown on jid0-OrDwsV63wgU4TFI6yptWagbfUE8@jetpack version 2.0.1-signed
+1502779805321	addons.xpi	DEBUG	Calling bootstrap method shutdown on firefox@getpocket.com version 1.0.5
+1502779805322	addons.xpi	DEBUG	Calling bootstrap method shutdown on firebug@software.joehewitt.com version 2.0.19
+1502779805338	addons.xpi	DEBUG	Calling bootstrap method shutdown on easyscreenshot@mozillaonline.com version 2.55
+1502779805339	addons.xpi	DEBUG	Calling bootstrap method shutdown on e10srollout@mozilla.org version 1.50
+1502779805339	addons.xpi	DEBUG	Calling bootstrap method shutdown on commonfix@mozillaonline.com version 1.52
+console.error: 
+  Message: ReferenceError: reason is not defined
+  Stack:
+    exports.onUnload@resource://gre/modules/commonjs/toolkit/loader.js -> resource://commonfix-at-mozillaonline-dot-com/lib/main.js:316:1
+unload/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/system/unload.js:79:9
+unload@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/system/unload.js:73:3
+onunload@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/system/unload.js:99:5
+observe@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/system/events.js:81:7
+unload@resource://gre/modules/commonjs/toolkit/loader.js:956:3
+unload/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/addon/bootstrap.js:156:9
+unload@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/addon/bootstrap.js:152:12
+shutdown@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/addon/bootstrap.js:149:12
+callBootstrapMethod@resource://gre/modules/addons/XPIProvider.jsm:4982:11
+observe@resource://gre/modules/addons/XPIProvider.jsm:2917:15
+
+1502779805376	addons.xpi	DEBUG	Calling bootstrap method shutdown on coba@mozilla.com.cn version 3.55
+1502779805378	addons.xpi	DEBUG	Calling bootstrap method shutdown on aushelper@mozilla.org version 2.0
+[GPU 12792] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w64-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 12772] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w64-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 12772] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w64-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1502779805666	addons.manager	DEBUG	shutdown
+1502779805667	addons.manager	DEBUG	Calling shutdown blocker for XPIProvider
+1502779805667	addons.xpi	DEBUG	shutdown
+1502779805667	addons.xpi-utils	DEBUG	shutdown
+1502779805668	addons.manager	DEBUG	Calling shutdown blocker for LightweightThemeManager
+1502779805668	addons.manager	DEBUG	Calling shutdown blocker for GMPProvider
+1502779805672	addons.manager	DEBUG	Calling shutdown blocker for PluginProvider
+1502779805672	addons.manager	DEBUG	Calling shutdown blocker for <unnamed-provider>
+1502779805674	addons.manager	DEBUG	Calling shutdown blocker for PreviousExperimentProvider
+1502779805676	addons.xpi	DEBUG	Notifying XPI shutdown observers
+1502779805679	addons.manager	DEBUG	Async provider shutdown done
+1502779806023	Marionette	INFO	Ceased listening
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+

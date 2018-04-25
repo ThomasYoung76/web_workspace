@@ -1,0 +1,15 @@
+ID,FUNCTION,DESC
+post,添加,添加权限
+removeDevGroup,移除设备分组,移除设备分组
+import,导入,设备导入权限
+permission,权限管理,权限管理
+get,查询,查询权限
+delete,删除,删除权限
+list,列表,列出表中数据
+uploadAvatar,上传图片,上传图片
+put,修改,修改权限
+mapDevGroup,地图设备分组,地图设备分组
+addDevGroup,添加设备分组,添加设备分组
+export,导出,批量或多个导出设备
+batch,批量添加设备,批量添加设备
+devolveOwner,移交主人,移交主人

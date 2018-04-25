@@ -1,0 +1,3623 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>三江智慧云PLMS</title>
+    <meta name="generator" content="HTMLTestRunner 0.8.2"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    
+<style type="text/css" media="screen">
+body        { font-family: verdana, arial, helvetica, sans-serif; font-size: 80%; }
+table       { font-size: 100%; }
+pre         { word-wrap:break-word;word-break:break-all;overflow:auto;}
+
+/* -- heading ---------------------------------------------------------------------- */
+h1 {
+	font-size: 16pt;
+	color: gray;
+}
+.heading {
+    margin-top: 0ex;
+    margin-bottom: 1ex;
+}
+
+.heading .attribute {
+    margin-top: 1ex;
+    margin-bottom: 0;
+}
+
+.button{  
+    border:1px solid #cccccc;  
+    cursor:pointer;  
+    margin:10px 5px;  
+    height:40px;  
+    text-align:center;  
+    border-radius: 4px;  
+    border-color: #636263 #464647 #A1A3A5;  
+    text-shadow: 0 1px 1px #F6F6F6;  
+    background-image: -moz-linear-gradient(center top, #D9D9D9, #A6A6A6 49%, #A6A6A6 50%);  
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #D9D9D9),color-stop(1, #A6A6A6));  
+}  
+
+.buttonText{  
+    position:relative;  
+    font-weight:bold;  
+    top:10px;
+    color:#58595B;  
+}   
+
+.heading .description {
+    margin-top: 4ex;
+    margin-bottom: 6ex;
+}
+
+.panel .description{  
+    border:1px solid #CCCCCC;  
+    border-color: #636263 #464647 #A1A3A5;  
+    margin:10px 5px;  
+    height:165px;  
+    border-radius: 4px;  
+}  
+.scroll-item {  
+    position: relative;  
+    width: 100%;  
+    height: 32px;  
+    border-bottom:1px solid gray;  
+    cursor: pointer;  
+}  
+.item-even {  
+    background-color: #E7E8EC;  
+}  
+      
+.item-odd {  
+    background-color: #E0ECF6;  
+}  
+.rect {  
+    float: left;  
+    margin-top: 5px;  
+    margin-left: 5px;  
+    width: 20px;  
+    height: 20px;  
+    border-radius: 3px;  
+}  
+.item-text{  
+    margin-left: 5px;  
+    height: 100%;  
+    float: left;  
+    font-size: 14px;   
+    vertical-align: middle;  
+    display: inline-block;  
+    line-height: 30px;  
+}  
+
+.bg{  
+    position:absolute;  
+    height:97%;  
+    width:80%;  
+    overflow-x: hidden;  
+    overflow-y:hidden;  
+}  
+.panel{  
+    position:absolute;  
+    height:550px;  
+    width:750px;  
+    left:45px;  
+    top:45px;  
+    border-radius: 12px;  
+    background-image: -moz-linear-gradient(top,#ffffff, #000000);  
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ffffff),color-stop(1, #000000));  
+    }  
+.panel1{  
+    position:absolute;  
+    height:550px;  
+    width:200px;  
+    left:800px;  
+    top:45px;  
+    border-radius: 12px;  
+    background-image: -moz-linear-gradient(top,#FFFFFF, #FFFFFF);  
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #EBEBEB),color-stop(1, #BFBFBF));  
+    } 
+.panelBg{  
+    position:absolute;  
+    height:600px;  
+    width:1000px;  
+    left:20px;  
+    top:20px;  
+    border-radius: 12px;  
+    background-color:#000000;  
+    opacity:0.5;  
+}  
+
+.title{  
+    border:1px solid green;  
+    position:relative;  
+    margin:5px;  
+    font-size:22px;  
+    font-weight:bold;  
+    text-align:center;  
+    color:#58595B;  
+} 
+
+.piechart{  
+    border:1px solid green;  
+    margin:5px;  
+    height:170px;  
+} 
+
+.barchart{  
+    border:1px solid green;  
+    margin:5px;  
+    height:170px;  
+}  
+
+.linechart{  
+    border:1px solid green;  
+    margin:5px;  
+    height:170px;  
+} 
+     
+.subTitle{  
+    border:1px solid green;  
+    margin:5px;   
+    font-size:14px;  
+    height:70px;  
+    font-weight:bold;  
+    text-indent:2em;  
+    color:#6D6E71;  
+}  
+
+/* -- css div popup ------------------------------------------------------------------------ */
+a.popup_link {
+}
+
+a.popup_link:hover {
+    color: red;
+}
+
+.popup_window {
+    display: none;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    /*border: solid #627173 1px; */
+    padding: 10px;
+    background-color: #E6E6D6;
+    font-family: "Lucida Console", "Courier New", Courier, monospace;
+    text-align: left;
+    font-size: 8pt;
+    width: 600px;
+}
+
+}
+/* -- report ------------------------------------------------------------------------ */
+#show_detail_line {
+    margin-top: 3ex;
+    margin-bottom: 1ex;
+}
+#result_table {
+    width: 80%;
+    border-collapse: collapse;
+    border: 1px solid #777;
+}
+#header_row {
+    font-weight: bold;
+    color: white;
+    background-color: #777;
+}
+#result_table td {
+    border: 1px solid #777;
+    padding: 2px;
+	width: 100px;
+}
+#total_row  { font-weight: bold; }
+.passClass  { background-color: #6c6; }
+.failClass  { background-color: #c60; }
+.errorClass { background-color: #c00; }
+.passCase   { color: #6c6; font-weight: bold;}
+.failCase   { color: #c60; font-weight: bold; }
+.errorCase  { color: #c00; font-weight: bold; }
+.hiddenRow  { display: none; }
+.testcase   { margin-left: 2em; width: 500px;}
+
+#section1{  
+    border:1px solid green;  
+    position:relative;  
+    float:left;  
+    width:235px;  
+    height:530px;  
+    top:10px;  
+    left:10px;  
+}  
+#section2{  
+    border:1px solid green;  
+    position:relative;  
+    float:left;  
+    width:235px;  
+    height:530px;  
+    top:10px;  
+    left:20px;  
+}  
+#section3{  
+    border:1px solid green;  
+    position:relative;  
+    float:left;  
+    width:235px;  
+    height:530px;  
+    top:10px;  
+    left:30px;  
+}  
+#section4{  
+    border:1px solid green;  
+    position:relative;  
+    float:left;  
+    width:180px;  
+    height:530px;  
+    top:10px;  
+    left:10px;  
+}  
+
+/* -- ending ---------------------------------------------------------------------- */
+#ending {
+}
+
+</style>
+
+</head>
+<body>
+<script language="javascript" type="text/javascript"><!--
+output_list = Array();
+
+/* level - 0:Summary; 1:Fail; 2:All */
+function showCase(level) {
+    trs = document.getElementsByTagName("tr");
+    for (var i = 0; i < trs.length; i++) {
+        tr = trs[i];
+        id = tr.id;
+        if (id.substr(0,2) == 'ft') {
+            if (level < 1) {
+                tr.className = 'hiddenRow';
+            }
+            else {
+                tr.className = '';
+            }
+        }
+        if (id.substr(0,2) == 'pt') {
+            if (level > 1) {
+                tr.className = '';
+            }
+            else {
+                tr.className = 'hiddenRow';
+            }
+        }
+        if (id.substr(0,2) == 'st') {
+           if (level > 1) {
+               tr.className = '';
+            }
+           else {
+               tr.className = 'hiddenRow';
+           }
+        }
+    }
+}
+
+function showClassDetail(cid, count) {
+    var id_list = Array(count);
+    //var toHide = 1;
+    for (var i = 0; i < count; i++) {
+        tid0 = 't' + cid.substr(1) + '.' + (i+1);
+        tid = 'f' + tid0;
+        tr = document.getElementById(tid);
+        if (!tr) {
+            tid = 'p' + tid0;
+            tr = document.getElementById(tid);
+        }
+         if (!tr) {
+            tid = 'e' + tid0;
+            tr = document.getElementById(tid);
+        }
+        id_list[i] = tid;
+      // if (tr.className) {
+        //   toHide = 0;
+        //}
+
+    }
+    for (var i = 0; i < count; i++) {
+        tid = id_list[i];
+        if (document.getElementById(tid).className =='') {			
+            document.getElementById(tid).className = 'hiddenRow';
+        }
+        else {
+			if(document.getElementById(tid).className!='none'){
+				document.getElementById(tid).className = '';
+			}else{
+				document.getElementById('div_'+tid).style.display = 'none';
+			}
+        }
+    }
+}
+
+
+function showTestDetail(div_id){
+    var details_div = document.getElementById(div_id)
+    var displayState = details_div.style.display
+    // alert(displayState)
+    if (displayState != 'block' ) {
+        displayState = 'block'
+        details_div.style.display = 'block'
+    }
+    else {
+        details_div.style.display = 'none'
+    }
+}
+
+
+function html_escape(s) {
+    s = s.replace(/&/g,'&');
+    s = s.replace(/</g,'<');
+    s = s.replace(/>/g,'>');
+    return s;
+}
+
+/* obsoleted by detail in <div>
+function showOutput(id, name) {
+    var w = window.open("", //url
+                    name,
+                    "resizable,scrollbars,status,width=800,height=450");
+    d = w.document;
+    d.write("<pre>");
+    d.write(html_escape(output_list[id]));
+    d.write("\n");
+    d.write("<a href='javascript:window.close()'>close</a>\n");
+    d.write("</pre>\n");
+    d.close();
+}
+*/
+--></script>
+
+<div class='heading'>
+<h1>三江智慧云PLMS</h1>
+<p class='attribute'><strong>Start Time:</strong> 2017-08-10 08:28:26</p>
+<p class='attribute'><strong>Duration:</strong> 1:08:06.810000</p>
+<p class='attribute'><strong>Tester:</strong> yangshifu</p>
+<p class='attribute'><strong>Environment:</strong> FireFox</p>
+<p class='attribute'><strong>Status:</strong> Pass 143 Error 36</p>
+
+<p class='description'>用例测试结果</p>
+</div>
+
+
+
+<p id='show_detail_line'>
+<a href='javascript:showCase(0)'>Summary</a>
+<a href='javascript:showCase(1)'>Fail</a>
+<a href='javascript:showCase(2)'>All</a>
+</p>
+<table id='result_table'>
+<colgroup>
+<col align='left' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+</colgroup>
+<tr id='header_row'>
+    <td>Test Group/Test case</td>
+    <td>Count</td>
+    <td>Pass</td>
+    <td>Fail</td>
+    <td>Error</td>
+    <td>CaseInfo</td>
+    <td>Screenshot</td>
+</tr>
+
+<tr class='errorClass'>
+    <td>Device: 以设备类型为粒度覆盖相应功能的测试</td>
+    <td>179</td>
+    <td>143</td>
+    <td>0</td>
+    <td>36</td>
+    <td><a href="javascript:showClassDetail('c1',179)">Detail</a></td>
+	<td> </td>
+</tr>
+
+<tr id='pt1.1' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_add_01_0: 添加设备成功 [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x9c\xba', '59317dbcc02f1c65')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.2' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_add_01_1: 添加设备成功 [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x8a\xa5', 'c98fc3c0be0a4710')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.3' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_add_01_2: 添加设备成功 [with *args=(2, '\xe6\x99\xba\xe6\x85\xa7\xe...e7\xab\x99', 'd06df7facc28d15f')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.4' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_add_02_0: 添加设备，修改ID，名称，描述信息 [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x9c\xba', '59317dbcc02f1c65')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.5' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_add_02_1: 添加设备，修改ID，名称，描述信息 [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x8a\xa5', 'c98fc3c0be0a4710')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.6' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_add_02_2: 添加设备，修改ID，名称，描述信息 [with *args=(2, '\xe6\x99\xba\xe6\x85\xa7\xe...e7\xab\x99', 'd06df7facc28d15f')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='ft1.7' class='none'>
+    <td class='Error'><div class='testcase'>test_device_add_03_0: 添加设备，修改属主不存在，失败  //bug [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x9c\xba', '59317dbcc02f1c65')]</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.7')" >
+        error</a>
+
+    <div id='div_ft1.7' class="popup_window" >
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.7').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.7: 2017-08-10-08-30-44.jpg
+Traceback (most recent call last):
+  File "D:\workspace\lib\result.py", line 47, in wrapper
+    func(self, *args, **kwargs)
+  File "D:/workspace/testcase/device.py", line 234, in test_device_add_03
+    raise AssertionError(msg)
+AssertionError: False is not true
+Traceback (most recent call last):
+  File "E:\Python27\lib\site-packages\parameterized\parameterized.py", line 392, in standalone_func
+    return func(*(a + p.args), **p.kwargs)
+  File "D:\workspace\lib\result.py", line 59, in wrapper
+    raise Exception
+Exception
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+
+
+	<td align='center'>
+    <a    href="file://///10.1.77.83/result/screenshot/2017-08-10-08-30-44.jpg">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='ft1.8' class='none'>
+    <td class='Error'><div class='testcase'>test_device_add_03_1: 添加设备，修改属主不存在，失败  //bug [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x8a\xa5', 'c98fc3c0be0a4710')]</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.8')" >
+        error</a>
+
+    <div id='div_ft1.8' class="popup_window" >
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.8').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.8: 2017-08-10-08-31-06.jpg
+Traceback (most recent call last):
+  File "D:\workspace\lib\result.py", line 47, in wrapper
+    func(self, *args, **kwargs)
+  File "D:/workspace/testcase/device.py", line 234, in test_device_add_03
+    raise AssertionError(msg)
+AssertionError: False is not true
+Traceback (most recent call last):
+  File "E:\Python27\lib\site-packages\parameterized\parameterized.py", line 392, in standalone_func
+    return func(*(a + p.args), **p.kwargs)
+  File "D:\workspace\lib\result.py", line 59, in wrapper
+    raise Exception
+Exception
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+
+
+	<td align='center'>
+    <a    href="file://///10.1.77.83/result/screenshot/2017-08-10-08-31-06.jpg">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='ft1.9' class='none'>
+    <td class='Error'><div class='testcase'>test_device_add_03_2: 添加设备，修改属主不存在，失败  //bug [with *args=(2, '\xe6\x99\xba\xe6\x85\xa7\xe...e7\xab\x99', 'd06df7facc28d15f')]</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.9')" >
+        error</a>
+
+    <div id='div_ft1.9' class="popup_window" >
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.9').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.9: 2017-08-10-08-31-28.jpg
+Traceback (most recent call last):
+  File "D:\workspace\lib\result.py", line 47, in wrapper
+    func(self, *args, **kwargs)
+  File "D:/workspace/testcase/device.py", line 234, in test_device_add_03
+    raise AssertionError(msg)
+AssertionError: False is not true
+Traceback (most recent call last):
+  File "E:\Python27\lib\site-packages\parameterized\parameterized.py", line 392, in standalone_func
+    return func(*(a + p.args), **p.kwargs)
+  File "D:\workspace\lib\result.py", line 59, in wrapper
+    raise Exception
+Exception
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+
+
+	<td align='center'>
+    <a    href="file://///10.1.77.83/result/screenshot/2017-08-10-08-31-28.jpg">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.10' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_copy_01_0: 复制设备，直接保存，删除设备 [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x9c\xba', '59317dbcc02f1c65')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.11' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_copy_01_1: 复制设备，直接保存，删除设备 [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x8a\xa5', 'c98fc3c0be0a4710')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.12' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_copy_01_2: 复制设备，直接保存，删除设备 [with *args=(2, '\xe6\x99\xba\xe6\x85\xa7\xe...e7\xab\x99', 'd06df7facc28d15f')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.13' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_copy_02_0: 复制设备，修改设备id为已存在的id，保存失败 [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x9c\xba', '59317dbcc02f1c65')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.14' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_copy_02_1: 复制设备，修改设备id为已存在的id，保存失败 [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x8a\xa5', 'c98fc3c0be0a4710')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.15' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_copy_02_2: 复制设备，修改设备id为已存在的id，保存失败 [with *args=(2, '\xe6\x99\xba\xe6\x85\xa7\xe...e7\xab\x99', 'd06df7facc28d15f')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.16' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_copy_03_0: 复制设备，修改id，保存成功 [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x9c\xba', '59317dbcc02f1c65')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.17' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_copy_03_1: 复制设备，修改id，保存成功 [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x8a\xa5', 'c98fc3c0be0a4710')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.18' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_copy_03_2: 复制设备，修改id，保存成功 [with *args=(2, '\xe6\x99\xba\xe6\x85\xa7\xe...e7\xab\x99', 'd06df7facc28d15f')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.19' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_copy_04_0: 复制设备，修改设备名称为空，无法保存 [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x9c\xba', '59317dbcc02f1c65')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.20' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_copy_04_1: 复制设备，修改设备名称为空，无法保存 [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x8a\xa5', 'c98fc3c0be0a4710')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.21' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_copy_04_2: 复制设备，修改设备名称为空，无法保存 [with *args=(2, '\xe6\x99\xba\xe6\x85\xa7\xe...e7\xab\x99', 'd06df7facc28d15f')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.22' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_copy_05_0: 复制设备，修改设备名称，保存成功 [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x9c\xba', '59317dbcc02f1c65')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.23' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_copy_05_1: 复制设备，修改设备名称，保存成功 [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x8a\xa5', 'c98fc3c0be0a4710')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.24' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_copy_05_2: 复制设备，修改设备名称，保存成功 [with *args=(2, '\xe6\x99\xba\xe6\x85\xa7\xe...e7\xab\x99', 'd06df7facc28d15f')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.25' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_copy_06_0: 复制设备，修改设备描述，保存成功 [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x9c\xba', '59317dbcc02f1c65')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.26' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_copy_06_1: 复制设备，修改设备描述，保存成功 [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x8a\xa5', 'c98fc3c0be0a4710')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.27' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_copy_06_2: 复制设备，修改设备描述，保存成功 [with *args=(2, '\xe6\x99\xba\xe6\x85\xa7\xe...e7\xab\x99', 'd06df7facc28d15f')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.28' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_copy_07_0: 复制设备，修改设备描述信息为空，保存成功 [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x9c\xba', '59317dbcc02f1c65')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.29' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_copy_07_1: 复制设备，修改设备描述信息为空，保存成功 [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x8a\xa5', 'c98fc3c0be0a4710')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.30' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_copy_07_2: 复制设备，修改设备描述信息为空，保存成功 [with *args=(2, '\xe6\x99\xba\xe6\x85\xa7\xe...e7\xab\x99', 'd06df7facc28d15f')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='ft1.31' class='none'>
+    <td class='Error'><div class='testcase'>test_device_copy_08_0: 复制设备，修改属主为不存在的用户，保存失败  //bug [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x9c\xba', '59317dbcc02f1c65')]</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.31')" >
+        error</a>
+
+    <div id='div_ft1.31' class="popup_window" >
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.31').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.31: 2017-08-10-08-36-43.jpg
+Traceback (most recent call last):
+  File "D:\workspace\lib\result.py", line 47, in wrapper
+    func(self, *args, **kwargs)
+  File "D:/workspace/testcase/device.py", line 140, in test_device_copy_08
+    self.assertTrue(self.plms.sj_func_is_tips_display(content))
+  File "E:\Python27\lib\unittest\case.py", line 422, in assertTrue
+    raise self.failureException(msg)
+AssertionError: False is not true
+Traceback (most recent call last):
+  File "E:\Python27\lib\site-packages\parameterized\parameterized.py", line 392, in standalone_func
+    return func(*(a + p.args), **p.kwargs)
+  File "D:\workspace\lib\result.py", line 59, in wrapper
+    raise Exception
+Exception
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+
+
+	<td align='center'>
+    <a    href="file://///10.1.77.83/result/screenshot/2017-08-10-08-36-43.jpg">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='ft1.32' class='none'>
+    <td class='Error'><div class='testcase'>test_device_copy_08_1: 复制设备，修改属主为不存在的用户，保存失败  //bug [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x8a\xa5', 'c98fc3c0be0a4710')]</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.32')" >
+        error</a>
+
+    <div id='div_ft1.32' class="popup_window" >
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.32').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.32: 2017-08-10-08-37-11.jpg
+Traceback (most recent call last):
+  File "D:\workspace\lib\result.py", line 47, in wrapper
+    func(self, *args, **kwargs)
+  File "D:/workspace/testcase/device.py", line 140, in test_device_copy_08
+    self.assertTrue(self.plms.sj_func_is_tips_display(content))
+  File "E:\Python27\lib\unittest\case.py", line 422, in assertTrue
+    raise self.failureException(msg)
+AssertionError: False is not true
+Traceback (most recent call last):
+  File "E:\Python27\lib\site-packages\parameterized\parameterized.py", line 392, in standalone_func
+    return func(*(a + p.args), **p.kwargs)
+  File "D:\workspace\lib\result.py", line 59, in wrapper
+    raise Exception
+Exception
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+
+
+	<td align='center'>
+    <a    href="file://///10.1.77.83/result/screenshot/2017-08-10-08-37-11.jpg">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='ft1.33' class='none'>
+    <td class='Error'><div class='testcase'>test_device_copy_08_2: 复制设备，修改属主为不存在的用户，保存失败  //bug [with *args=(2, '\xe6\x99\xba\xe6\x85\xa7\xe...e7\xab\x99', 'd06df7facc28d15f')]</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.33')" >
+        error</a>
+
+    <div id='div_ft1.33' class="popup_window" >
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.33').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.33: 2017-08-10-08-37-39.jpg
+Traceback (most recent call last):
+  File "D:\workspace\lib\result.py", line 47, in wrapper
+    func(self, *args, **kwargs)
+  File "D:/workspace/testcase/device.py", line 140, in test_device_copy_08
+    self.assertTrue(self.plms.sj_func_is_tips_display(content))
+  File "E:\Python27\lib\unittest\case.py", line 422, in assertTrue
+    raise self.failureException(msg)
+AssertionError: False is not true
+Traceback (most recent call last):
+  File "E:\Python27\lib\site-packages\parameterized\parameterized.py", line 392, in standalone_func
+    return func(*(a + p.args), **p.kwargs)
+  File "D:\workspace\lib\result.py", line 59, in wrapper
+    raise Exception
+Exception
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+
+
+	<td align='center'>
+    <a    href="file://///10.1.77.83/result/screenshot/2017-08-10-08-37-39.jpg">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.34' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_copy_09_0: 复制设备，修改属主为存在的用户 [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x9c\xba', '59317dbcc02f1c65')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.35' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_copy_09_1: 复制设备，修改属主为存在的用户 [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x8a\xa5', 'c98fc3c0be0a4710')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.36' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_copy_09_2: 复制设备，修改属主为存在的用户 [with *args=(2, '\xe6\x99\xba\xe6\x85\xa7\xe...e7\xab\x99', 'd06df7facc28d15f')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.37' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_edit_01_0: 修改属主成功，属主自动关注该设备 [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x9c\xba', '59317dbcc02f1c65')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.38' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_edit_01_1: 修改属主成功，属主自动关注该设备 [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x8a\xa5', 'c98fc3c0be0a4710')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.39' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_edit_01_2: 修改属主成功，属主自动关注该设备 [with *args=(2, '\xe6\x99\xba\xe6\x85\xa7\xe...e7\xab\x99', 'd06df7facc28d15f')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='ft1.40' class='none'>
+    <td class='Error'><div class='testcase'>test_device_edit_02_0: 设备的属主从用户1修改为用户2  //bug [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x9c\xba', '59317dbcc02f1c65')]</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.40')" >
+        error</a>
+
+    <div id='div_ft1.40' class="popup_window" >
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.40').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.40: 2017-08-10-08-46-04.jpg
+Traceback (most recent call last):
+  File "D:\workspace\lib\result.py", line 47, in wrapper
+    func(self, *args, **kwargs)
+  File "D:/workspace/testcase/device.py", line 944, in test_device_edit_02
+    self.assertFalse(self.plms.sj_list_is_device_exist(alarm_host_id, 'authorized'))
+  File "E:\Python27\lib\unittest\case.py", line 416, in assertFalse
+    raise self.failureException(msg)
+AssertionError: True is not false
+Traceback (most recent call last):
+  File "E:\Python27\lib\site-packages\parameterized\parameterized.py", line 392, in standalone_func
+    return func(*(a + p.args), **p.kwargs)
+  File "D:\workspace\lib\result.py", line 59, in wrapper
+    raise Exception
+Exception
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+
+
+	<td align='center'>
+    <a    href="file://///10.1.77.83/result/screenshot/2017-08-10-08-46-04.jpg">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='ft1.41' class='none'>
+    <td class='Error'><div class='testcase'>test_device_edit_02_1: 设备的属主从用户1修改为用户2  //bug [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x8a\xa5', 'c98fc3c0be0a4710')]</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.41')" >
+        error</a>
+
+    <div id='div_ft1.41' class="popup_window" >
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.41').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.41: 2017-08-10-08-48-12.jpg
+Traceback (most recent call last):
+  File "D:\workspace\lib\result.py", line 47, in wrapper
+    func(self, *args, **kwargs)
+  File "D:/workspace/testcase/device.py", line 948, in test_device_edit_02
+    self.assertTrue(self.plms.sj_list_is_device_exist(alarm_host_id, 'observed'))
+  File "E:\Python27\lib\unittest\case.py", line 422, in assertTrue
+    raise self.failureException(msg)
+AssertionError: False is not true
+Traceback (most recent call last):
+  File "E:\Python27\lib\site-packages\parameterized\parameterized.py", line 392, in standalone_func
+    return func(*(a + p.args), **p.kwargs)
+  File "D:\workspace\lib\result.py", line 59, in wrapper
+    raise Exception
+Exception
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+
+
+	<td align='center'>
+    <a    href="file://///10.1.77.83/result/screenshot/2017-08-10-08-48-12.jpg">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='ft1.42' class='none'>
+    <td class='Error'><div class='testcase'>test_device_edit_02_2: 设备的属主从用户1修改为用户2  //bug [with *args=(2, '\xe6\x99\xba\xe6\x85\xa7\xe...e7\xab\x99', 'd06df7facc28d15f')]</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.42')" >
+        error</a>
+
+    <div id='div_ft1.42' class="popup_window" >
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.42').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.42: 2017-08-10-08-50-19.jpg
+Traceback (most recent call last):
+  File "D:\workspace\lib\result.py", line 47, in wrapper
+    func(self, *args, **kwargs)
+  File "D:/workspace/testcase/device.py", line 948, in test_device_edit_02
+    self.assertTrue(self.plms.sj_list_is_device_exist(alarm_host_id, 'observed'))
+  File "E:\Python27\lib\unittest\case.py", line 422, in assertTrue
+    raise self.failureException(msg)
+AssertionError: False is not true
+Traceback (most recent call last):
+  File "E:\Python27\lib\site-packages\parameterized\parameterized.py", line 392, in standalone_func
+    return func(*(a + p.args), **p.kwargs)
+  File "D:\workspace\lib\result.py", line 59, in wrapper
+    raise Exception
+Exception
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+
+
+	<td align='center'>
+    <a    href="file://///10.1.77.83/result/screenshot/2017-08-10-08-50-19.jpg">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='ft1.43' class='none'>
+    <td class='Error'><div class='testcase'>test_device_edit_03_0: 修改的属主不存在，提示失败信息，修改失败 //bug [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x9c\xba', '59317dbcc02f1c65')]</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.43')" >
+        error</a>
+
+    <div id='div_ft1.43' class="popup_window" >
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.43').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.43: 2017-08-10-08-50-44.jpg
+Traceback (most recent call last):
+  File "D:\workspace\lib\result.py", line 47, in wrapper
+    func(self, *args, **kwargs)
+  File "D:/workspace/testcase/device.py", line 973, in test_device_edit_03
+    raise Exception('owner is not exist, should not modify success')
+Exception: owner is not exist, should not modify success
+Traceback (most recent call last):
+  File "E:\Python27\lib\site-packages\parameterized\parameterized.py", line 392, in standalone_func
+    return func(*(a + p.args), **p.kwargs)
+  File "D:\workspace\lib\result.py", line 59, in wrapper
+    raise Exception
+Exception
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+
+
+	<td align='center'>
+    <a    href="file://///10.1.77.83/result/screenshot/2017-08-10-08-50-44.jpg">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='ft1.44' class='none'>
+    <td class='Error'><div class='testcase'>test_device_edit_03_1: 修改的属主不存在，提示失败信息，修改失败 //bug [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x8a\xa5', 'c98fc3c0be0a4710')]</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.44')" >
+        error</a>
+
+    <div id='div_ft1.44' class="popup_window" >
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.44').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.44: 2017-08-10-08-51-09.jpg
+Traceback (most recent call last):
+  File "D:\workspace\lib\result.py", line 47, in wrapper
+    func(self, *args, **kwargs)
+  File "D:/workspace/testcase/device.py", line 973, in test_device_edit_03
+    raise Exception('owner is not exist, should not modify success')
+Exception: owner is not exist, should not modify success
+Traceback (most recent call last):
+  File "E:\Python27\lib\site-packages\parameterized\parameterized.py", line 392, in standalone_func
+    return func(*(a + p.args), **p.kwargs)
+  File "D:\workspace\lib\result.py", line 59, in wrapper
+    raise Exception
+Exception
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+
+
+	<td align='center'>
+    <a    href="file://///10.1.77.83/result/screenshot/2017-08-10-08-51-09.jpg">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='ft1.45' class='none'>
+    <td class='Error'><div class='testcase'>test_device_edit_03_2: 修改的属主不存在，提示失败信息，修改失败 //bug [with *args=(2, '\xe6\x99\xba\xe6\x85\xa7\xe...e7\xab\x99', 'd06df7facc28d15f')]</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.45')" >
+        error</a>
+
+    <div id='div_ft1.45' class="popup_window" >
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.45').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.45: 2017-08-10-08-51-34.jpg
+Traceback (most recent call last):
+  File "D:\workspace\lib\result.py", line 47, in wrapper
+    func(self, *args, **kwargs)
+  File "D:/workspace/testcase/device.py", line 973, in test_device_edit_03
+    raise Exception('owner is not exist, should not modify success')
+Exception: owner is not exist, should not modify success
+Traceback (most recent call last):
+  File "E:\Python27\lib\site-packages\parameterized\parameterized.py", line 392, in standalone_func
+    return func(*(a + p.args), **p.kwargs)
+  File "D:\workspace\lib\result.py", line 59, in wrapper
+    raise Exception
+Exception
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+
+
+	<td align='center'>
+    <a    href="file://///10.1.77.83/result/screenshot/2017-08-10-08-51-34.jpg">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.46' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_edit_04_0: 修改设备加密方式为不加密 [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x9c\xba', '59317dbcc02f1c65')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.47' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_edit_04_1: 修改设备加密方式为不加密 [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x8a\xa5', 'c98fc3c0be0a4710')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.48' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_edit_04_2: 修改设备加密方式为不加密 [with *args=(2, '\xe6\x99\xba\xe6\x85\xa7\xe...e7\xab\x99', 'd06df7facc28d15f')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.49' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_edit_05_0: 修改设备加密方式为aes-128-ecb [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x9c\xba', '59317dbcc02f1c65')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.50' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_edit_05_1: 修改设备加密方式为aes-128-ecb [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x8a\xa5', 'c98fc3c0be0a4710')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.51' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_edit_05_2: 修改设备加密方式为aes-128-ecb [with *args=(2, '\xe6\x99\xba\xe6\x85\xa7\xe...e7\xab\x99', 'd06df7facc28d15f')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.52' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_edit_06_0: 修改设备密钥为空提示错误 [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x9c\xba', '59317dbcc02f1c65')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.53' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_edit_06_1: 修改设备密钥为空提示错误 [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x8a\xa5', 'c98fc3c0be0a4710')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.54' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_edit_06_2: 修改设备密钥为空提示错误 [with *args=(2, '\xe6\x99\xba\xe6\x85\xa7\xe...e7\xab\x99', 'd06df7facc28d15f')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.55' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_edit_07_0: 修改设备密钥且密钥不加密 [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x9c\xba', '59317dbcc02f1c65')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.56' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_edit_07_1: 修改设备密钥且密钥不加密 [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x8a\xa5', 'c98fc3c0be0a4710')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.57' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_edit_07_2: 修改设备密钥且密钥不加密 [with *args=(2, '\xe6\x99\xba\xe6\x85\xa7\xe...e7\xab\x99', 'd06df7facc28d15f')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='ft1.58' class='none'>
+    <td class='Error'><div class='testcase'>test_device_edit_08_0: 修改设备密钥且密钥加密  //bug [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x9c\xba', '59317dbcc02f1c65')]</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.58')" >
+        error</a>
+
+    <div id='div_ft1.58' class="popup_window" >
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.58').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.58: 2017-08-10-08-53-54.jpg
+Traceback (most recent call last):
+  File "D:\workspace\lib\result.py", line 47, in wrapper
+    func(self, *args, **kwargs)
+  File "D:/workspace/testcase/device.py", line 1041, in test_device_edit_08
+    self.plms.sj_panel_update_attr(attr_id, raw_value, is_sure=False)
+  File "D:\workspace\lib\page.py", line 750, in sj_panel_update_attr
+    self.driver.find_element_by_xpath("//button[@class='btn']").click()
+  File "E:\Python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 313, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "E:\Python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 791, in find_element
+    'value': value})['value']
+  File "E:\Python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 256, in execute
+    self.error_handler.check_response(response)
+  File "E:\Python27\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+NoSuchElementException: Message: Unable to locate element: //button[@class='btn']
+
+Traceback (most recent call last):
+  File "E:\Python27\lib\site-packages\parameterized\parameterized.py", line 392, in standalone_func
+    return func(*(a + p.args), **p.kwargs)
+  File "D:\workspace\lib\result.py", line 59, in wrapper
+    raise Exception
+Exception
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+
+
+	<td align='center'>
+    <a    href="file://///10.1.77.83/result/screenshot/2017-08-10-08-53-54.jpg">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='ft1.59' class='none'>
+    <td class='Error'><div class='testcase'>test_device_edit_08_1: 修改设备密钥且密钥加密  //bug [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x8a\xa5', 'c98fc3c0be0a4710')]</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.59')" >
+        error</a>
+
+    <div id='div_ft1.59' class="popup_window" >
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.59').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.59: 2017-08-10-08-54-06.jpg
+Traceback (most recent call last):
+  File "D:\workspace\lib\result.py", line 47, in wrapper
+    func(self, *args, **kwargs)
+  File "D:/workspace/testcase/device.py", line 1038, in test_device_edit_08
+    self.assertEqual(self.plms.sj_panel_get_attr('pf-encrypt'), 'aes-128-ecb')
+  File "E:\Python27\lib\unittest\case.py", line 513, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "E:\Python27\lib\unittest\case.py", line 506, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: u'Empty' != 'aes-128-ecb'
+Traceback (most recent call last):
+  File "E:\Python27\lib\site-packages\parameterized\parameterized.py", line 392, in standalone_func
+    return func(*(a + p.args), **p.kwargs)
+  File "D:\workspace\lib\result.py", line 59, in wrapper
+    raise Exception
+Exception
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+
+
+	<td align='center'>
+    <a    href="file://///10.1.77.83/result/screenshot/2017-08-10-08-54-06.jpg">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='ft1.60' class='none'>
+    <td class='Error'><div class='testcase'>test_device_edit_08_2: 修改设备密钥且密钥加密  //bug [with *args=(2, '\xe6\x99\xba\xe6\x85\xa7\xe...e7\xab\x99', 'd06df7facc28d15f')]</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.60')" >
+        error</a>
+
+    <div id='div_ft1.60' class="popup_window" >
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.60').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.60: 2017-08-10-08-54-18.jpg
+Traceback (most recent call last):
+  File "D:\workspace\lib\result.py", line 47, in wrapper
+    func(self, *args, **kwargs)
+  File "D:/workspace/testcase/device.py", line 1038, in test_device_edit_08
+    self.assertEqual(self.plms.sj_panel_get_attr('pf-encrypt'), 'aes-128-ecb')
+  File "E:\Python27\lib\unittest\case.py", line 513, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "E:\Python27\lib\unittest\case.py", line 506, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: u'Empty' != 'aes-128-ecb'
+Traceback (most recent call last):
+  File "E:\Python27\lib\site-packages\parameterized\parameterized.py", line 392, in standalone_func
+    return func(*(a + p.args), **p.kwargs)
+  File "D:\workspace\lib\result.py", line 59, in wrapper
+    raise Exception
+Exception
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+
+
+	<td align='center'>
+    <a    href="file://///10.1.77.83/result/screenshot/2017-08-10-08-54-18.jpg">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.61' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_edit_09_0: 修改设备名称为空成功 [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x9c\xba', '59317dbcc02f1c65')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.62' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_edit_09_1: 修改设备名称为空成功 [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x8a\xa5', 'c98fc3c0be0a4710')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.63' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_edit_09_2: 修改设备名称为空成功 [with *args=(2, '\xe6\x99\xba\xe6\x85\xa7\xe...e7\xab\x99', 'd06df7facc28d15f')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.64' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_edit_10_0: 修改设备名称为其他值正常 [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x9c\xba', '59317dbcc02f1c65')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.65' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_edit_10_1: 修改设备名称为其他值正常 [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x8a\xa5', 'c98fc3c0be0a4710')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.66' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_edit_10_2: 修改设备名称为其他值正常 [with *args=(2, '\xe6\x99\xba\xe6\x85\xa7\xe...e7\xab\x99', 'd06df7facc28d15f')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.67' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_edit_11_0: 修改设备描述为空正常 [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x9c\xba', '59317dbcc02f1c65')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.68' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_edit_11_1: 修改设备描述为空正常 [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x8a\xa5', 'c98fc3c0be0a4710')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.69' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_edit_11_2: 修改设备描述为空正常 [with *args=(2, '\xe6\x99\xba\xe6\x85\xa7\xe...e7\xab\x99', 'd06df7facc28d15f')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.70' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_edit_12_0: 修改设备描述为其他值正常 [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x9c\xba', '59317dbcc02f1c65')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.71' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_edit_12_1: 修改设备描述为其他值正常 [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x8a\xa5', 'c98fc3c0be0a4710')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.72' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_edit_12_2: 修改设备描述为其他值正常 [with *args=(2, '\xe6\x99\xba\xe6\x85\xa7\xe...e7\xab\x99', 'd06df7facc28d15f')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.73' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_edit_13_0: 修改设备安装地址并确认 [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x9c\xba', '59317dbcc02f1c65')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.74' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_edit_13_1: 修改设备安装地址并确认 [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x8a\xa5', 'c98fc3c0be0a4710')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.75' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_edit_13_2: 修改设备安装地址并确认 [with *args=(2, '\xe6\x99\xba\xe6\x85\xa7\xe...e7\xab\x99', 'd06df7facc28d15f')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.76' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_edit_14_0: 修改设备安装地址并取消 [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x9c\xba', '59317dbcc02f1c65')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.77' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_edit_14_1: 修改设备安装地址并取消 [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x8a\xa5', 'c98fc3c0be0a4710')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.78' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_edit_14_2: 修改设备安装地址并取消 [with *args=(2, '\xe6\x99\xba\xe6\x85\xa7\xe...e7\xab\x99', 'd06df7facc28d15f')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.79' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_export_01_0: 导出单个设备的txt格式 [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x9c\xba', '59317dbcc02f1c65')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.80' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_export_01_1: 导出单个设备的txt格式 [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x8a\xa5', 'c98fc3c0be0a4710')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.81' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_export_01_2: 导出单个设备的txt格式 [with *args=(2, '\xe6\x99\xba\xe6\x85\xa7\xe...e7\xab\x99', 'd06df7facc28d15f')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.82' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_export_02_0: 导出单个设备的excel格式 [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x9c\xba', '59317dbcc02f1c65')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.83' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_export_02_1: 导出单个设备的excel格式 [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x8a\xa5', 'c98fc3c0be0a4710')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.84' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_export_02_2: 导出单个设备的excel格式 [with *args=(2, '\xe6\x99\xba\xe6\x85\xa7\xe...e7\xab\x99', 'd06df7facc28d15f')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.85' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_export_03_0: 不选中任何设备直接导出excel失败 [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x9c\xba', '59317dbcc02f1c65')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.86' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_export_03_1: 不选中任何设备直接导出excel失败 [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x8a\xa5', 'c98fc3c0be0a4710')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.87' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_export_03_2: 不选中任何设备直接导出excel失败 [with *args=(2, '\xe6\x99\xba\xe6\x85\xa7\xe...e7\xab\x99', 'd06df7facc28d15f')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.88' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_export_04_0: 不选中设备直接导出txt失败，需要输入条件 [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x9c\xba', '59317dbcc02f1c65')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.89' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_export_04_1: 不选中设备直接导出txt失败，需要输入条件 [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x8a\xa5', 'c98fc3c0be0a4710')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.90' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_export_04_2: 不选中设备直接导出txt失败，需要输入条件 [with *args=(2, '\xe6\x99\xba\xe6\x85\xa7\xe...e7\xab\x99', 'd06df7facc28d15f')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.91' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_export_05_0: 导出当页所有数据的excel文件 [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x9c\xba', '59317dbcc02f1c65')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='ft1.92' class='none'>
+    <td class='Error'><div class='testcase'>test_device_export_05_1: 导出当页所有数据的excel文件 [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x8a\xa5', 'c98fc3c0be0a4710')]</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.92')" >
+        error</a>
+
+    <div id='div_ft1.92' class="popup_window" >
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.92').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.92: 2017-08-10-08-59-51.jpg
+Traceback (most recent call last):
+  File "D:\workspace\lib\result.py", line 47, in wrapper
+    func(self, *args, **kwargs)
+  File "D:/workspace/testcase/device.py", line 306, in test_device_export_05
+    self.assertEqual(set(dev_id_excel), set(dev_id_page))
+  File "E:\Python27\lib\unittest\case.py", line 513, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "E:\Python27\lib\unittest\case.py", line 796, in assertSetEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "E:\Python27\lib\unittest\case.py", line 410, in fail
+    raise self.failureException(msg)
+AssertionError: Items in the first set but not the second:
+u'LoRaFireButton'
+Items in the second set but not the first:
+u'526973696e674846_000E5EDC'
+u'526973696e674846_00481070'
+u'526973696e674846_0144913D'
+u'526973696e674846_00903E59'
+u'526973696e674846_01B9C203'
+u'526973696e674846_00BB7395'
+u'526973696e674846_002604A4'
+u'526973696e674846_00D5C202'
+u'076a4335283d3f8879046f2'
+u'526973696e674846_017D9D07'
+Traceback (most recent call last):
+  File "E:\Python27\lib\site-packages\parameterized\parameterized.py", line 392, in standalone_func
+    return func(*(a + p.args), **p.kwargs)
+  File "D:\workspace\lib\result.py", line 59, in wrapper
+    raise Exception
+Exception
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+
+
+	<td align='center'>
+    <a    href="file://///10.1.77.83/result/screenshot/2017-08-10-08-59-51.jpg">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='ft1.93' class='none'>
+    <td class='Error'><div class='testcase'>test_device_export_05_2: 导出当页所有数据的excel文件 [with *args=(2, '\xe6\x99\xba\xe6\x85\xa7\xe...e7\xab\x99', 'd06df7facc28d15f')]</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.93')" >
+        error</a>
+
+    <div id='div_ft1.93' class="popup_window" >
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.93').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.93: 2017-08-10-09-00-03.jpg
+Traceback (most recent call last):
+  File "D:\workspace\lib\result.py", line 47, in wrapper
+    func(self, *args, **kwargs)
+  File "D:/workspace/testcase/device.py", line 306, in test_device_export_05
+    self.assertEqual(set(dev_id_excel), set(dev_id_page))
+  File "E:\Python27\lib\unittest\case.py", line 513, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "E:\Python27\lib\unittest\case.py", line 796, in assertSetEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "E:\Python27\lib\unittest\case.py", line 410, in fail
+    raise self.failureException(msg)
+AssertionError: Items in the first set but not the second:
+u'VD-Community'
+Items in the second set but not the first:
+u'226d32f252380c82'
+u'af245f7eab206c36'
+u'd06df7facc28d15f'
+u'657af0346c0dd60b'
+u'sjyun_vd_community_001'
+u'VD-Community-3jyun'
+Traceback (most recent call last):
+  File "E:\Python27\lib\site-packages\parameterized\parameterized.py", line 392, in standalone_func
+    return func(*(a + p.args), **p.kwargs)
+  File "D:\workspace\lib\result.py", line 59, in wrapper
+    raise Exception
+Exception
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+
+
+	<td align='center'>
+    <a    href="file://///10.1.77.83/result/screenshot/2017-08-10-09-00-03.jpg">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.94' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_export_06_0: 导出当页所有数据的txt文件 [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x9c\xba', '59317dbcc02f1c65')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.95' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_export_06_1: 导出当页所有数据的txt文件 [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x8a\xa5', 'c98fc3c0be0a4710')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.96' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_export_06_2: 导出当页所有数据的txt文件 [with *args=(2, '\xe6\x99\xba\xe6\x85\xa7\xe...e7\xab\x99', 'd06df7facc28d15f')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='ft1.97' class='none'>
+    <td class='Error'><div class='testcase'>test_device_export_07_0: 跨页导出全部设备数据的excel格式 //bug [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x9c\xba', '59317dbcc02f1c65')]</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.97')" >
+        error</a>
+
+    <div id='div_ft1.97' class="popup_window" >
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.97').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.97: 2017-08-10-09-01-10.jpg
+Traceback (most recent call last):
+  File "D:\workspace\lib\result.py", line 47, in wrapper
+    func(self, *args, **kwargs)
+  File "D:/workspace/testcase/device.py", line 359, in test_device_export_07
+    self.assertEqual(set(dev_id_excel), set(dev_id_page))
+  File "E:\Python27\lib\unittest\case.py", line 513, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "E:\Python27\lib\unittest\case.py", line 796, in assertSetEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "E:\Python27\lib\unittest\case.py", line 410, in fail
+    raise self.failureException(msg)
+AssertionError: Items in the second set but not the first:
+u'sjyun_IDF22F18FA'
+u'sjyun_ID0150F5F4'
+u'sjyun_ID0037B9D9'
+u'sjyun_ID1DE55180'
+u'sjyun_ID95FC4555'
+u'sjyun_jb_qbl_6001_002'
+u'sjyun_jb_qbl_6001_003'
+u'sjyun_ID4578B081'
+u'sjyun_IDC4253D2E'
+u'sjyun_ID8EBE77F0'
+u'sjyun_IDFB505AD0'
+u'sjyun_ID941D6DE9'
+u'sjyun_ID9123799C'
+u'fred20161da6c23d799'
+u'sjyun_ID773ADDAE'
+u'sjyun_ID01D5B8B4'
+u'sjyun_IDDAC74253'
+u'sjyun_jb_qbl_6001_001'
+u'7D461A6C'
+u'sjyun_IDEE2FB1A7'
+Traceback (most recent call last):
+  File "E:\Python27\lib\site-packages\parameterized\parameterized.py", line 392, in standalone_func
+    return func(*(a + p.args), **p.kwargs)
+  File "D:\workspace\lib\result.py", line 59, in wrapper
+    raise Exception
+Exception
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+
+
+	<td align='center'>
+    <a    href="file://///10.1.77.83/result/screenshot/2017-08-10-09-01-10.jpg">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='ft1.98' class='none'>
+    <td class='Error'><div class='testcase'>test_device_export_07_1: 跨页导出全部设备数据的excel格式 //bug [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x8a\xa5', 'c98fc3c0be0a4710')]</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.98')" >
+        error</a>
+
+    <div id='div_ft1.98' class="popup_window" >
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.98').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.98: 2017-08-10-09-01-54.jpg
+Traceback (most recent call last):
+  File "D:\workspace\lib\result.py", line 47, in wrapper
+    func(self, *args, **kwargs)
+  File "D:/workspace/testcase/device.py", line 359, in test_device_export_07
+    self.assertEqual(set(dev_id_excel), set(dev_id_page))
+  File "E:\Python27\lib\unittest\case.py", line 513, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "E:\Python27\lib\unittest\case.py", line 796, in assertSetEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "E:\Python27\lib\unittest\case.py", line 410, in fail
+    raise self.failureException(msg)
+AssertionError: Items in the first set but not the second:
+u'2e7cdaab9c51c9f9'
+u'c98fc3c0be0a4710'
+Items in the second set but not the first:
+u'62511cc5dc17244d'
+u'sjyun_ID95FC4555'
+u'sjyun_IDC4253D2E'
+u'sjyun_IDEE2FB1A7'
+u'59317dbcc02f1c65'
+u'sjyun_ID0037B9D9'
+u'sjyun_jb_qbl_6001_002'
+u'sjyun_jb_qbl_6001_003'
+u'sjyun_jb_qbl_6001_001'
+u'sjyun_IDFB505AD0'
+u'sjyun_ID941D6DE9'
+u'sjyun_ID773ADDAE'
+u'sjyun_ID8EBE77F0'
+u'sjyun_IDDAC74253'
+u'7D461A6C'
+u'sjyun_IDB080771B'
+u'sjyun_IDF22F18FA'
+u'sjyun_ID1DE55180'
+u'sjyun_IDEEF71E49'
+u'sjyun_ID9123799C'
+u'fred20161da6c23d799'
+u'sjyun_ID01D5B8B4'
+u'sjyun_ID4578B081'
+u'sjyun_ID0150F5F4'
+Traceback (most recent call last):
+  File "E:\Python27\lib\site-packages\parameterized\parameterized.py", line 392, in standalone_func
+    return func(*(a + p.args), **p.kwargs)
+  File "D:\workspace\lib\result.py", line 59, in wrapper
+    raise Exception
+Exception
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+
+
+	<td align='center'>
+    <a    href="file://///10.1.77.83/result/screenshot/2017-08-10-09-01-54.jpg">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='ft1.99' class='none'>
+    <td class='Error'><div class='testcase'>test_device_export_07_2: 跨页导出全部设备数据的excel格式 //bug [with *args=(2, '\xe6\x99\xba\xe6\x85\xa7\xe...e7\xab\x99', 'd06df7facc28d15f')]</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.99')" >
+        error</a>
+
+    <div id='div_ft1.99' class="popup_window" >
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.99').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.99: 2017-08-10-09-02-19.jpg
+Traceback (most recent call last):
+  File "D:\workspace\lib\result.py", line 47, in wrapper
+    func(self, *args, **kwargs)
+  File "D:/workspace/testcase/device.py", line 359, in test_device_export_07
+    self.assertEqual(set(dev_id_excel), set(dev_id_page))
+  File "E:\Python27\lib\unittest\case.py", line 513, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "E:\Python27\lib\unittest\case.py", line 796, in assertSetEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "E:\Python27\lib\unittest\case.py", line 410, in fail
+    raise self.failureException(msg)
+AssertionError: Items in the first set but not the second:
+u'226d32f252380c82'
+u'af245f7eab206c36'
+u'd06df7facc28d15f'
+u'657af0346c0dd60b'
+u'sjyun_vd_community_001'
+u'VD-Community-3jyun'
+Items in the second set but not the first:
+u'62511cc5dc17244d'
+u'sjyun_ID95FC4555'
+u'sjyun_IDC4253D2E'
+u'sjyun_IDEE2FB1A7'
+u'59317dbcc02f1c65'
+u'sjyun_ID0037B9D9'
+u'sjyun_jb_qbl_6001_002'
+u'sjyun_jb_qbl_6001_003'
+u'sjyun_jb_qbl_6001_001'
+u'sjyun_IDFB505AD0'
+u'sjyun_ID941D6DE9'
+u'sjyun_ID773ADDAE'
+u'sjyun_ID8EBE77F0'
+u'sjyun_IDDAC74253'
+u'7D461A6C'
+u'sjyun_IDB080771B'
+u'sjyun_IDF22F18FA'
+u'sjyun_ID1DE55180'
+u'sjyun_IDEEF71E49'
+u'sjyun_ID9123799C'
+u'fred20161da6c23d799'
+u'sjyun_ID01D5B8B4'
+u'sjyun_ID4578B081'
+u'sjyun_ID0150F5F4'
+Traceback (most recent call last):
+  File "E:\Python27\lib\site-packages\parameterized\parameterized.py", line 392, in standalone_func
+    return func(*(a + p.args), **p.kwargs)
+  File "D:\workspace\lib\result.py", line 59, in wrapper
+    raise Exception
+Exception
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+
+
+	<td align='center'>
+    <a    href="file://///10.1.77.83/result/screenshot/2017-08-10-09-02-19.jpg">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='ft1.100' class='none'>
+    <td class='Error'><div class='testcase'>test_device_export_08_0: 跨页导出全部设备数据的txt格式 //bug [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x9c\xba', '59317dbcc02f1c65')]</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.100')" >
+        error</a>
+
+    <div id='div_ft1.100' class="popup_window" >
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.100').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.100: 2017-08-10-09-02-47.jpg
+Traceback (most recent call last):
+  File "D:\workspace\lib\result.py", line 47, in wrapper
+    func(self, *args, **kwargs)
+  File "D:/workspace/testcase/device.py", line 389, in test_device_export_08
+    self.assertEquals(set(dev_id_txt), set(dev_id_page))
+  File "E:\Python27\lib\unittest\case.py", line 513, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "E:\Python27\lib\unittest\case.py", line 796, in assertSetEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "E:\Python27\lib\unittest\case.py", line 410, in fail
+    raise self.failureException(msg)
+AssertionError: Items in the second set but not the first:
+u'sjyun_IDF22F18FA'
+u'sjyun_ID0150F5F4'
+u'sjyun_ID0037B9D9'
+u'sjyun_ID1DE55180'
+u'sjyun_ID95FC4555'
+u'sjyun_jb_qbl_6001_002'
+u'sjyun_jb_qbl_6001_003'
+u'sjyun_ID4578B081'
+u'sjyun_IDC4253D2E'
+u'sjyun_ID8EBE77F0'
+u'sjyun_IDFB505AD0'
+u'sjyun_ID941D6DE9'
+u'sjyun_ID9123799C'
+u'fred20161da6c23d799'
+u'sjyun_ID773ADDAE'
+u'sjyun_ID01D5B8B4'
+u'sjyun_IDDAC74253'
+u'sjyun_jb_qbl_6001_001'
+u'7D461A6C'
+u'sjyun_IDEE2FB1A7'
+Traceback (most recent call last):
+  File "E:\Python27\lib\site-packages\parameterized\parameterized.py", line 392, in standalone_func
+    return func(*(a + p.args), **p.kwargs)
+  File "D:\workspace\lib\result.py", line 59, in wrapper
+    raise Exception
+Exception
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+
+
+	<td align='center'>
+    <a    href="file://///10.1.77.83/result/screenshot/2017-08-10-09-02-47.jpg">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='ft1.101' class='none'>
+    <td class='Error'><div class='testcase'>test_device_export_08_1: 跨页导出全部设备数据的txt格式 //bug [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x8a\xa5', 'c98fc3c0be0a4710')]</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.101')" >
+        error</a>
+
+    <div id='div_ft1.101' class="popup_window" >
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.101').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.101: 2017-08-10-09-03-33.jpg
+Traceback (most recent call last):
+  File "D:\workspace\lib\result.py", line 47, in wrapper
+    func(self, *args, **kwargs)
+  File "D:/workspace/testcase/device.py", line 389, in test_device_export_08
+    self.assertEquals(set(dev_id_txt), set(dev_id_page))
+  File "E:\Python27\lib\unittest\case.py", line 513, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "E:\Python27\lib\unittest\case.py", line 796, in assertSetEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "E:\Python27\lib\unittest\case.py", line 410, in fail
+    raise self.failureException(msg)
+AssertionError: Items in the first set but not the second:
+'2e7cdaab9c51c9f9'
+'c98fc3c0be0a4710'
+Items in the second set but not the first:
+u'62511cc5dc17244d'
+u'sjyun_ID95FC4555'
+u'sjyun_IDC4253D2E'
+u'sjyun_IDEE2FB1A7'
+u'59317dbcc02f1c65'
+u'sjyun_ID0037B9D9'
+u'sjyun_jb_qbl_6001_002'
+u'sjyun_jb_qbl_6001_003'
+u'sjyun_jb_qbl_6001_001'
+u'sjyun_IDFB505AD0'
+u'sjyun_ID941D6DE9'
+u'sjyun_ID773ADDAE'
+u'sjyun_ID8EBE77F0'
+u'sjyun_IDDAC74253'
+u'7D461A6C'
+u'sjyun_IDB080771B'
+u'sjyun_IDF22F18FA'
+u'sjyun_ID1DE55180'
+u'sjyun_IDEEF71E49'
+u'sjyun_ID9123799C'
+u'fred20161da6c23d799'
+u'sjyun_ID01D5B8B4'
+u'sjyun_ID4578B081'
+u'sjyun_ID0150F5F4'
+Traceback (most recent call last):
+  File "E:\Python27\lib\site-packages\parameterized\parameterized.py", line 392, in standalone_func
+    return func(*(a + p.args), **p.kwargs)
+  File "D:\workspace\lib\result.py", line 59, in wrapper
+    raise Exception
+Exception
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+
+
+	<td align='center'>
+    <a    href="file://///10.1.77.83/result/screenshot/2017-08-10-09-03-33.jpg">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='ft1.102' class='none'>
+    <td class='Error'><div class='testcase'>test_device_export_08_2: 跨页导出全部设备数据的txt格式 //bug [with *args=(2, '\xe6\x99\xba\xe6\x85\xa7\xe...e7\xab\x99', 'd06df7facc28d15f')]</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.102')" >
+        error</a>
+
+    <div id='div_ft1.102' class="popup_window" >
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.102').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.102: 2017-08-10-09-03-57.jpg
+Traceback (most recent call last):
+  File "D:\workspace\lib\result.py", line 47, in wrapper
+    func(self, *args, **kwargs)
+  File "D:/workspace/testcase/device.py", line 389, in test_device_export_08
+    self.assertEquals(set(dev_id_txt), set(dev_id_page))
+  File "E:\Python27\lib\unittest\case.py", line 513, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "E:\Python27\lib\unittest\case.py", line 796, in assertSetEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "E:\Python27\lib\unittest\case.py", line 410, in fail
+    raise self.failureException(msg)
+AssertionError: Items in the first set but not the second:
+'226d32f252380c82'
+'af245f7eab206c36'
+'d06df7facc28d15f'
+'657af0346c0dd60b'
+'sjyun_vd_community_001'
+'VD-Community-3jyun'
+Items in the second set but not the first:
+u'62511cc5dc17244d'
+u'sjyun_ID95FC4555'
+u'sjyun_IDC4253D2E'
+u'sjyun_IDEE2FB1A7'
+u'59317dbcc02f1c65'
+u'sjyun_ID0037B9D9'
+u'sjyun_jb_qbl_6001_002'
+u'sjyun_jb_qbl_6001_003'
+u'sjyun_jb_qbl_6001_001'
+u'sjyun_IDFB505AD0'
+u'sjyun_ID941D6DE9'
+u'sjyun_ID773ADDAE'
+u'sjyun_ID8EBE77F0'
+u'sjyun_IDDAC74253'
+u'7D461A6C'
+u'sjyun_IDB080771B'
+u'sjyun_IDF22F18FA'
+u'sjyun_ID1DE55180'
+u'sjyun_IDEEF71E49'
+u'sjyun_ID9123799C'
+u'fred20161da6c23d799'
+u'sjyun_ID01D5B8B4'
+u'sjyun_ID4578B081'
+u'sjyun_ID0150F5F4'
+Traceback (most recent call last):
+  File "E:\Python27\lib\site-packages\parameterized\parameterized.py", line 392, in standalone_func
+    return func(*(a + p.args), **p.kwargs)
+  File "D:\workspace\lib\result.py", line 59, in wrapper
+    raise Exception
+Exception
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+
+
+	<td align='center'>
+    <a    href="file://///10.1.77.83/result/screenshot/2017-08-10-09-03-57.jpg">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.103' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_export_09_0: 按条件批量导出全部10台JB-QBL-IPC设备到excel [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x9c\xba', '59317dbcc02f1c65')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.104' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_export_09_1: 按条件批量导出全部10台JB-QBL-IPC设备到excel [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x8a\xa5', 'c98fc3c0be0a4710')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.105' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_export_09_2: 按条件批量导出全部10台JB-QBL-IPC设备到excel [with *args=(2, '\xe6\x99\xba\xe6\x85\xa7\xe...e7\xab\x99', 'd06df7facc28d15f')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='ft1.106' class='none'>
+    <td class='Error'><div class='testcase'>test_device_export_10_0: 按条件批量导出全部10台JB-QBL-IPC设备到txt [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x9c\xba', '59317dbcc02f1c65')]</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.106')" >
+        error</a>
+
+    <div id='div_ft1.106' class="popup_window" >
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.106').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.106: 2017-08-10-09-05-25.jpg
+Traceback (most recent call last):
+  File "D:\workspace\lib\result.py", line 47, in wrapper
+    func(self, *args, **kwargs)
+  File "D:/workspace/testcase/device.py", line 439, in test_device_export_10
+    self.assertEquals(set(dev_id_txt), set(dev_id_page))
+  File "E:\Python27\lib\unittest\case.py", line 513, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "E:\Python27\lib\unittest\case.py", line 796, in assertSetEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "E:\Python27\lib\unittest\case.py", line 410, in fail
+    raise self.failureException(msg)
+AssertionError: Items in the first set but not the second:
+'2017080208cf6a3a'
+'2017080205c6595f'
+'2017080206bd575a'
+'2017080207c1c25c'
+'201708021000422f'
+'20170802099d80a6'
+Items in the second set but not the first:
+u'2017011336d4c04602c'
+u'sjyun_ID513D56E6'
+u'20170113114e62a5e5b'
+u'201701132a8ccc01721'
+u'sjyun_ID98BC358A'
+u'sjyun_IDA6E77B35'
+Traceback (most recent call last):
+  File "E:\Python27\lib\site-packages\parameterized\parameterized.py", line 392, in standalone_func
+    return func(*(a + p.args), **p.kwargs)
+  File "D:\workspace\lib\result.py", line 59, in wrapper
+    raise Exception
+Exception
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+
+
+	<td align='center'>
+    <a    href="file://///10.1.77.83/result/screenshot/2017-08-10-09-05-25.jpg">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.107' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_export_10_1: 按条件批量导出全部10台JB-QBL-IPC设备到txt [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x8a\xa5', 'c98fc3c0be0a4710')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.108' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_export_10_2: 按条件批量导出全部10台JB-QBL-IPC设备到txt [with *args=(2, '\xe6\x99\xba\xe6\x85\xa7\xe...e7\xab\x99', 'd06df7facc28d15f')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.109' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_export_11_0: 批量导出时设备类型为空时导出失败 [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x9c\xba', '59317dbcc02f1c65')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.110' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_export_11_1: 批量导出时设备类型为空时导出失败 [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x8a\xa5', 'c98fc3c0be0a4710')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.111' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_export_11_2: 批量导出时设备类型为空时导出失败 [with *args=(2, '\xe6\x99\xba\xe6\x85\xa7\xe...e7\xab\x99', 'd06df7facc28d15f')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.112' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_export_12_0: 批量导出时设备批次为空时导出失败 [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x9c\xba', '59317dbcc02f1c65')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.113' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_export_12_1: 批量导出时设备批次为空时导出失败 [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x8a\xa5', 'c98fc3c0be0a4710')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.114' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_export_12_2: 批量导出时设备批次为空时导出失败 [with *args=(2, '\xe6\x99\xba\xe6\x85\xa7\xe...e7\xab\x99', 'd06df7facc28d15f')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='ft1.115' class='none'>
+    <td class='Error'><div class='testcase'>test_device_export_13_0: 导出设备中不存在的批次失败，提示友好 //bug [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x9c\xba', '59317dbcc02f1c65')]</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.115')" >
+        error</a>
+
+    <div id='div_ft1.115' class="popup_window" >
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.115').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.115: 2017-08-10-09-07-22.jpg
+Traceback (most recent call last):
+  File "D:\workspace\lib\result.py", line 47, in wrapper
+    func(self, *args, **kwargs)
+  File "D:/workspace/testcase/device.py", line 470, in test_device_export_13
+    self.assertTrue(self.plms.sj_func_is_tips_display(content))
+  File "E:\Python27\lib\unittest\case.py", line 422, in assertTrue
+    raise self.failureException(msg)
+AssertionError: False is not true
+Traceback (most recent call last):
+  File "E:\Python27\lib\site-packages\parameterized\parameterized.py", line 392, in standalone_func
+    return func(*(a + p.args), **p.kwargs)
+  File "D:\workspace\lib\result.py", line 59, in wrapper
+    raise Exception
+Exception
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+
+
+	<td align='center'>
+    <a    href="file://///10.1.77.83/result/screenshot/2017-08-10-09-07-22.jpg">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='ft1.116' class='none'>
+    <td class='Error'><div class='testcase'>test_device_export_13_1: 导出设备中不存在的批次失败，提示友好 //bug [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x8a\xa5', 'c98fc3c0be0a4710')]</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.116')" >
+        error</a>
+
+    <div id='div_ft1.116' class="popup_window" >
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.116').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.116: 2017-08-10-09-07-43.jpg
+Traceback (most recent call last):
+  File "D:\workspace\lib\result.py", line 47, in wrapper
+    func(self, *args, **kwargs)
+  File "D:/workspace/testcase/device.py", line 470, in test_device_export_13
+    self.assertTrue(self.plms.sj_func_is_tips_display(content))
+  File "E:\Python27\lib\unittest\case.py", line 422, in assertTrue
+    raise self.failureException(msg)
+AssertionError: False is not true
+Traceback (most recent call last):
+  File "E:\Python27\lib\site-packages\parameterized\parameterized.py", line 392, in standalone_func
+    return func(*(a + p.args), **p.kwargs)
+  File "D:\workspace\lib\result.py", line 59, in wrapper
+    raise Exception
+Exception
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+
+
+	<td align='center'>
+    <a    href="file://///10.1.77.83/result/screenshot/2017-08-10-09-07-43.jpg">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='ft1.117' class='none'>
+    <td class='Error'><div class='testcase'>test_device_export_13_2: 导出设备中不存在的批次失败，提示友好 //bug [with *args=(2, '\xe6\x99\xba\xe6\x85\xa7\xe...e7\xab\x99', 'd06df7facc28d15f')]</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.117')" >
+        error</a>
+
+    <div id='div_ft1.117' class="popup_window" >
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.117').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.117: 2017-08-10-09-08-03.jpg
+Traceback (most recent call last):
+  File "D:\workspace\lib\result.py", line 47, in wrapper
+    func(self, *args, **kwargs)
+  File "D:/workspace/testcase/device.py", line 470, in test_device_export_13
+    self.assertTrue(self.plms.sj_func_is_tips_display(content))
+  File "E:\Python27\lib\unittest\case.py", line 422, in assertTrue
+    raise self.failureException(msg)
+AssertionError: False is not true
+Traceback (most recent call last):
+  File "E:\Python27\lib\site-packages\parameterized\parameterized.py", line 392, in standalone_func
+    return func(*(a + p.args), **p.kwargs)
+  File "D:\workspace\lib\result.py", line 59, in wrapper
+    raise Exception
+Exception
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+
+
+	<td align='center'>
+    <a    href="file://///10.1.77.83/result/screenshot/2017-08-10-09-08-03.jpg">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.118' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_export_14_0: 设置批次号导入3台设备，按批次号导出，导出个数未空，设备全部被导出 //bug [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x9c\xba', '59317dbcc02f1c65')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.119' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_export_14_1: 设置批次号导入3台设备，按批次号导出，导出个数未空，设备全部被导出 //bug [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x8a\xa5', 'c98fc3c0be0a4710')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.120' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_export_14_2: 设置批次号导入3台设备，按批次号导出，导出个数未空，设备全部被导出 //bug [with *args=(2, '\xe6\x99\xba\xe6\x85\xa7\xe...e7\xab\x99', 'd06df7facc28d15f')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.121' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_gen_01_0: 批量生成5台无线报警设备 [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x9c\xba', '59317dbcc02f1c65')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.122' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_gen_01_1: 批量生成5台无线报警设备 [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x8a\xa5', 'c98fc3c0be0a4710')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.123' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_gen_01_2: 批量生成5台无线报警设备 [with *args=(2, '\xe6\x99\xba\xe6\x85\xa7\xe...e7\xab\x99', 'd06df7facc28d15f')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.124' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_gen_02_0: 批次为空，批量生成设备失败 [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x9c\xba', '59317dbcc02f1c65')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.125' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_gen_02_1: 批次为空，批量生成设备失败 [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x8a\xa5', 'c98fc3c0be0a4710')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.126' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_gen_02_2: 批次为空，批量生成设备失败 [with *args=(2, '\xe6\x99\xba\xe6\x85\xa7\xe...e7\xab\x99', 'd06df7facc28d15f')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.127' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_gen_03_0: 个数为空，批量生成设备失败 [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x9c\xba', '59317dbcc02f1c65')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.128' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_gen_03_1: 个数为空，批量生成设备失败 [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x8a\xa5', 'c98fc3c0be0a4710')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.129' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_gen_03_2: 个数为空，批量生成设备失败 [with *args=(2, '\xe6\x99\xba\xe6\x85\xa7\xe...e7\xab\x99', 'd06df7facc28d15f')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.130' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_gen_04_0: 设备类型为空，批量生成设备失败 [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x9c\xba', '59317dbcc02f1c65')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.131' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_gen_04_1: 设备类型为空，批量生成设备失败 [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x8a\xa5', 'c98fc3c0be0a4710')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.132' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_gen_04_2: 设备类型为空，批量生成设备失败 [with *args=(2, '\xe6\x99\xba\xe6\x85\xa7\xe...e7\xab\x99', 'd06df7facc28d15f')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.133' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_gen_05_0: 设备名称为空，批量生成设备失败 [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x9c\xba', '59317dbcc02f1c65')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.134' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_gen_05_1: 设备名称为空，批量生成设备失败 [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x8a\xa5', 'c98fc3c0be0a4710')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.135' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_gen_05_2: 设备名称为空，批量生成设备失败 [with *args=(2, '\xe6\x99\xba\xe6\x85\xa7\xe...e7\xab\x99', 'd06df7facc28d15f')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.136' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_gen_06_0: 批次号超过10位，批量生成设备失败 [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x9c\xba', '59317dbcc02f1c65')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.137' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_gen_06_1: 批次号超过10位，批量生成设备失败 [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x8a\xa5', 'c98fc3c0be0a4710')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.138' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_gen_06_2: 批次号超过10位，批量生成设备失败 [with *args=(2, '\xe6\x99\xba\xe6\x85\xa7\xe...e7\xab\x99', 'd06df7facc28d15f')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='ft1.139' class='none'>
+    <td class='Error'><div class='testcase'>test_device_gen_07_0: 批次号含非数字字母，批量生成设备失败  //bug [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x9c\xba', '59317dbcc02f1c65')]</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.139')" >
+        error</a>
+
+    <div id='div_ft1.139' class="popup_window" >
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.139').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.139: 2017-08-10-09-13-13.jpg
+Traceback (most recent call last):
+  File "D:\workspace\lib\result.py", line 47, in wrapper
+    func(self, *args, **kwargs)
+  File "D:/workspace/testcase/device.py", line 845, in test_device_gen_07
+    raise AssertionError(msg)
+AssertionError: False is not true
+Traceback (most recent call last):
+  File "E:\Python27\lib\site-packages\parameterized\parameterized.py", line 392, in standalone_func
+    return func(*(a + p.args), **p.kwargs)
+  File "D:\workspace\lib\result.py", line 59, in wrapper
+    raise Exception
+Exception
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+
+
+	<td align='center'>
+    <a    href="file://///10.1.77.83/result/screenshot/2017-08-10-09-13-13.jpg">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='ft1.140' class='none'>
+    <td class='Error'><div class='testcase'>test_device_gen_07_1: 批次号含非数字字母，批量生成设备失败  //bug [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x8a\xa5', 'c98fc3c0be0a4710')]</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.140')" >
+        error</a>
+
+    <div id='div_ft1.140' class="popup_window" >
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.140').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.140: 2017-08-10-09-13-41.jpg
+Traceback (most recent call last):
+  File "D:\workspace\lib\result.py", line 47, in wrapper
+    func(self, *args, **kwargs)
+  File "D:/workspace/testcase/device.py", line 845, in test_device_gen_07
+    raise AssertionError(msg)
+AssertionError: False is not true
+Traceback (most recent call last):
+  File "E:\Python27\lib\site-packages\parameterized\parameterized.py", line 392, in standalone_func
+    return func(*(a + p.args), **p.kwargs)
+  File "D:\workspace\lib\result.py", line 59, in wrapper
+    raise Exception
+Exception
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+
+
+	<td align='center'>
+    <a    href="file://///10.1.77.83/result/screenshot/2017-08-10-09-13-41.jpg">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='ft1.141' class='none'>
+    <td class='Error'><div class='testcase'>test_device_gen_07_2: 批次号含非数字字母，批量生成设备失败  //bug [with *args=(2, '\xe6\x99\xba\xe6\x85\xa7\xe...e7\xab\x99', 'd06df7facc28d15f')]</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.141')" >
+        error</a>
+
+    <div id='div_ft1.141' class="popup_window" >
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.141').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.141: 2017-08-10-09-14-10.jpg
+Traceback (most recent call last):
+  File "D:\workspace\lib\result.py", line 47, in wrapper
+    func(self, *args, **kwargs)
+  File "D:/workspace/testcase/device.py", line 845, in test_device_gen_07
+    raise AssertionError(msg)
+AssertionError: False is not true
+Traceback (most recent call last):
+  File "E:\Python27\lib\site-packages\parameterized\parameterized.py", line 392, in standalone_func
+    return func(*(a + p.args), **p.kwargs)
+  File "D:\workspace\lib\result.py", line 59, in wrapper
+    raise Exception
+Exception
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+
+
+	<td align='center'>
+    <a    href="file://///10.1.77.83/result/screenshot/2017-08-10-09-14-10.jpg">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.142' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_gen_08_0: 批次号位z，批量生成设备成功 [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x9c\xba', '59317dbcc02f1c65')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.143' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_gen_08_1: 批次号位z，批量生成设备成功 [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x8a\xa5', 'c98fc3c0be0a4710')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.144' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_gen_08_2: 批次号位z，批量生成设备成功 [with *args=(2, '\xe6\x99\xba\xe6\x85\xa7\xe...e7\xab\x99', 'd06df7facc28d15f')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.145' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_gen_09_0: 批次号位'abcde12345'共10位，批量生成设备成功 [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x9c\xba', '59317dbcc02f1c65')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.146' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_gen_09_1: 批次号位'abcde12345'共10位，批量生成设备成功 [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x8a\xa5', 'c98fc3c0be0a4710')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.147' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_gen_09_2: 批次号位'abcde12345'共10位，批量生成设备成功 [with *args=(2, '\xe6\x99\xba\xe6\x85\xa7\xe...e7\xab\x99', 'd06df7facc28d15f')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='ft1.148' class='none'>
+    <td class='Error'><div class='testcase'>test_device_gen_10_0: 设置属主为user_device_id1，批量生成设备成功且设备属主均正确  //bug [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x9c\xba', '59317dbcc02f1c65')]</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.148')" >
+        error</a>
+
+    <div id='div_ft1.148' class="popup_window" >
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.148').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.148: 2017-08-10-09-16-52.jpg
+Traceback (most recent call last):
+  File "D:\workspace\lib\result.py", line 47, in wrapper
+    func(self, *args, **kwargs)
+  File "D:/workspace/testcase/device.py", line 902, in test_device_gen_10
+    self.assertEqual(self.plms.sj_panel_get_attr("pf-ownerDevice_id"), user_device_id1)
+  File "E:\Python27\lib\unittest\case.py", line 513, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "E:\Python27\lib\unittest\case.py", line 506, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: u'Empty' != '13480879200_1500288608201'
+Traceback (most recent call last):
+  File "E:\Python27\lib\site-packages\parameterized\parameterized.py", line 392, in standalone_func
+    return func(*(a + p.args), **p.kwargs)
+  File "D:\workspace\lib\result.py", line 59, in wrapper
+    raise Exception
+Exception
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+
+
+	<td align='center'>
+    <a    href="file://///10.1.77.83/result/screenshot/2017-08-10-09-16-52.jpg">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='ft1.149' class='none'>
+    <td class='Error'><div class='testcase'>test_device_gen_10_1: 设置属主为user_device_id1，批量生成设备成功且设备属主均正确  //bug [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x8a\xa5', 'c98fc3c0be0a4710')]</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.149')" >
+        error</a>
+
+    <div id='div_ft1.149' class="popup_window" >
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.149').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.149: 2017-08-10-09-17-21.jpg
+Traceback (most recent call last):
+  File "D:\workspace\lib\result.py", line 47, in wrapper
+    func(self, *args, **kwargs)
+  File "D:/workspace/testcase/device.py", line 902, in test_device_gen_10
+    self.assertEqual(self.plms.sj_panel_get_attr("pf-ownerDevice_id"), user_device_id1)
+  File "E:\Python27\lib\unittest\case.py", line 513, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "E:\Python27\lib\unittest\case.py", line 506, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: u'Empty' != '13480879200_1500288608201'
+Traceback (most recent call last):
+  File "E:\Python27\lib\site-packages\parameterized\parameterized.py", line 392, in standalone_func
+    return func(*(a + p.args), **p.kwargs)
+  File "D:\workspace\lib\result.py", line 59, in wrapper
+    raise Exception
+Exception
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+
+
+	<td align='center'>
+    <a    href="file://///10.1.77.83/result/screenshot/2017-08-10-09-17-21.jpg">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='ft1.150' class='none'>
+    <td class='Error'><div class='testcase'>test_device_gen_10_2: 设置属主为user_device_id1，批量生成设备成功且设备属主均正确  //bug [with *args=(2, '\xe6\x99\xba\xe6\x85\xa7\xe...e7\xab\x99', 'd06df7facc28d15f')]</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.150')" >
+        error</a>
+
+    <div id='div_ft1.150' class="popup_window" >
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.150').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.150: 2017-08-10-09-17-52.jpg
+Traceback (most recent call last):
+  File "D:\workspace\lib\result.py", line 47, in wrapper
+    func(self, *args, **kwargs)
+  File "D:/workspace/testcase/device.py", line 902, in test_device_gen_10
+    self.assertEqual(self.plms.sj_panel_get_attr("pf-ownerDevice_id"), user_device_id1)
+  File "E:\Python27\lib\unittest\case.py", line 513, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "E:\Python27\lib\unittest\case.py", line 506, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: u'Empty' != '13480879200_1500288608201'
+Traceback (most recent call last):
+  File "E:\Python27\lib\site-packages\parameterized\parameterized.py", line 392, in standalone_func
+    return func(*(a + p.args), **p.kwargs)
+  File "D:\workspace\lib\result.py", line 59, in wrapper
+    raise Exception
+Exception
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+
+
+	<td align='center'>
+    <a    href="file://///10.1.77.83/result/screenshot/2017-08-10-09-17-52.jpg">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.151' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_group_01_0: 用户设备、消防设备加入分组成功 [with *args=(2, '\xe6\x99\xba\xe6\x85\xa7\xe...e7\xab\x99', 'd06df7facc28d15f')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.152' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_group_02_0: 第一页所有设备加入分组 [with *args=(2, '\xe6\x99\xba\xe6\x85\xa7\xe...e7\xab\x99', 'd06df7facc28d15f')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.153' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_import_01_0: 只填必填字段，导入5个完整的设备成功 [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x9c\xba', '59317dbcc02f1c65')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.154' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_import_01_1: 只填必填字段，导入5个完整的设备成功 [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x8a\xa5', 'c98fc3c0be0a4710')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.155' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_import_01_2: 只填必填字段，导入5个完整的设备成功 [with *args=(2, '\xe6\x99\xba\xe6\x85\xa7\xe...e7\xab\x99', 'd06df7facc28d15f')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.156' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_import_02_0: 设置批次号，导入12个设备成功 [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x9c\xba', '59317dbcc02f1c65')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.157' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_import_02_1: 设置批次号，导入12个设备成功 [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x8a\xa5', 'c98fc3c0be0a4710')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.158' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_import_02_2: 设置批次号，导入12个设备成功 [with *args=(2, '\xe6\x99\xba\xe6\x85\xa7\xe...e7\xab\x99', 'd06df7facc28d15f')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='ft1.159' class='none'>
+    <td class='Error'><div class='testcase'>test_device_import_03_0: 导入5个设备并设置属主，成功  //bug属主为设置失败 [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x9c\xba', '59317dbcc02f1c65')]</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.159')" >
+        error</a>
+
+    <div id='div_ft1.159' class="popup_window" >
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.159').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.159: 2017-08-10-09-25-44.jpg
+Traceback (most recent call last):
+  File "D:\workspace\lib\result.py", line 47, in wrapper
+    func(self, *args, **kwargs)
+  File "D:/workspace/testcase/device.py", line 581, in test_device_import_03
+    self.assertEqual(owner, user_device_id1)
+  File "E:\Python27\lib\unittest\case.py", line 513, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "E:\Python27\lib\unittest\case.py", line 506, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: u'Empty' != '13480879200_1500288608201'
+Traceback (most recent call last):
+  File "E:\Python27\lib\site-packages\parameterized\parameterized.py", line 392, in standalone_func
+    return func(*(a + p.args), **p.kwargs)
+  File "D:\workspace\lib\result.py", line 59, in wrapper
+    raise Exception
+Exception
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+
+
+	<td align='center'>
+    <a    href="file://///10.1.77.83/result/screenshot/2017-08-10-09-25-44.jpg">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='ft1.160' class='none'>
+    <td class='Error'><div class='testcase'>test_device_import_03_1: 导入5个设备并设置属主，成功  //bug属主为设置失败 [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x8a\xa5', 'c98fc3c0be0a4710')]</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.160')" >
+        error</a>
+
+    <div id='div_ft1.160' class="popup_window" >
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.160').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.160: 2017-08-10-09-26-32.jpg
+Traceback (most recent call last):
+  File "D:\workspace\lib\result.py", line 47, in wrapper
+    func(self, *args, **kwargs)
+  File "D:/workspace/testcase/device.py", line 581, in test_device_import_03
+    self.assertEqual(owner, user_device_id1)
+  File "E:\Python27\lib\unittest\case.py", line 513, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "E:\Python27\lib\unittest\case.py", line 506, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: u'Empty' != '13480879200_1500288608201'
+Traceback (most recent call last):
+  File "E:\Python27\lib\site-packages\parameterized\parameterized.py", line 392, in standalone_func
+    return func(*(a + p.args), **p.kwargs)
+  File "D:\workspace\lib\result.py", line 59, in wrapper
+    raise Exception
+Exception
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+
+
+	<td align='center'>
+    <a    href="file://///10.1.77.83/result/screenshot/2017-08-10-09-26-32.jpg">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='ft1.161' class='none'>
+    <td class='Error'><div class='testcase'>test_device_import_03_2: 导入5个设备并设置属主，成功  //bug属主为设置失败 [with *args=(2, '\xe6\x99\xba\xe6\x85\xa7\xe...e7\xab\x99', 'd06df7facc28d15f')]</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.161')" >
+        error</a>
+
+    <div id='div_ft1.161' class="popup_window" >
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.161').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.161: 2017-08-10-09-27-22.jpg
+Traceback (most recent call last):
+  File "D:\workspace\lib\result.py", line 47, in wrapper
+    func(self, *args, **kwargs)
+  File "D:/workspace/testcase/device.py", line 581, in test_device_import_03
+    self.assertEqual(owner, user_device_id1)
+  File "E:\Python27\lib\unittest\case.py", line 513, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "E:\Python27\lib\unittest\case.py", line 506, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: u'Empty' != '13480879200_1500288608201'
+Traceback (most recent call last):
+  File "E:\Python27\lib\site-packages\parameterized\parameterized.py", line 392, in standalone_func
+    return func(*(a + p.args), **p.kwargs)
+  File "D:\workspace\lib\result.py", line 59, in wrapper
+    raise Exception
+Exception
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+
+
+	<td align='center'>
+    <a    href="file://///10.1.77.83/result/screenshot/2017-08-10-09-27-22.jpg">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.162' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_import_04_0: 导入3个设备，同时设置属主和分组，成功 [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x9c\xba', '59317dbcc02f1c65')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.163' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_import_04_1: 导入3个设备，同时设置属主和分组，成功 [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x8a\xa5', 'c98fc3c0be0a4710')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.164' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_import_04_2: 导入3个设备，同时设置属主和分组，成功 [with *args=(2, '\xe6\x99\xba\xe6\x85\xa7\xe...e7\xab\x99', 'd06df7facc28d15f')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.165' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_import_05_0: 分组导入5个设备成功 [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x9c\xba', '59317dbcc02f1c65')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.166' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_import_05_1: 分组导入5个设备成功 [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x8a\xa5', 'c98fc3c0be0a4710')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.167' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_import_05_2: 分组导入5个设备成功 [with *args=(2, '\xe6\x99\xba\xe6\x85\xa7\xe...e7\xab\x99', 'd06df7facc28d15f')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.168' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_import_06_0: 导入设备，不上传文件，导入失败，提示合理 [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x9c\xba', '59317dbcc02f1c65')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.169' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_import_06_1: 导入设备，不上传文件，导入失败，提示合理 [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x8a\xa5', 'c98fc3c0be0a4710')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.170' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_import_06_2: 导入设备，不上传文件，导入失败，提示合理 [with *args=(2, '\xe6\x99\xba\xe6\x85\xa7\xe...e7\xab\x99', 'd06df7facc28d15f')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.171' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_import_07_0: 导入设备，上传文件内容未空 [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x9c\xba', '59317dbcc02f1c65')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.172' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_import_07_1: 导入设备，上传文件内容未空 [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x8a\xa5', 'c98fc3c0be0a4710')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.173' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_import_07_2: 导入设备，上传文件内容未空 [with *args=(2, '\xe6\x99\xba\xe6\x85\xa7\xe...e7\xab\x99', 'd06df7facc28d15f')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.174' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_import_08_0: 导入设备，设置批次号长度11位，导入失败，提示合理 [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x9c\xba', '59317dbcc02f1c65')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.175' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_import_08_1: 导入设备，设置批次号长度11位，导入失败，提示合理 [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x8a\xa5', 'c98fc3c0be0a4710')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.176' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_import_08_2: 导入设备，设置批次号长度11位，导入失败，提示合理 [with *args=(2, '\xe6\x99\xba\xe6\x85\xa7\xe...e7\xab\x99', 'd06df7facc28d15f')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.177' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_import_09_0: 不上传文件，导入失败，不刷新页面，再次上传文件导入成功 [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x9c\xba', '59317dbcc02f1c65')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.178' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_import_09_1: 不上传文件，导入失败，不刷新页面，再次上传文件导入成功 [with *args=(1, '\xe6\xb6\x88\xe9\x98\xb2\xe...e6\x8a\xa5', 'c98fc3c0be0a4710')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='pt1.179' class='hiddenRow'>
+    <td class='Pass'><div class='testcase'>test_device_import_09_2: 不上传文件，导入失败，不刷新页面，再次上传文件导入成功 [with *args=(2, '\xe6\x99\xba\xe6\x85\xa7\xe...e7\xab\x99', 'd06df7facc28d15f')]</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td align='center'>
+    <a  hidden="hidden"  href="">picture_shot</a>
+	</td>
+</tr>
+
+<tr id='total_row'>
+    <td>Total</td>
+    <td>179</td>
+    <td>143</td>
+    <td>0</td>
+    <td>36</td>
+    <td>Pass Rate:143/179</td>
+    <td> <a href="" target="_blank"></a></td>
+
+</tr>
+</table>
+
+<div id='ending'>&nbsp;</div>
+<div class="bg">  
+                       <div class="panelBg"></div>  
+                       <div class="panel"> 
+                       <div id="section1"> 
+                           <div class="title">Pie Chart</div>  
+                           <div class="subTitle">This chart is to show the rate that statis of test cases</div> 
+                           <div class="piechart">   
+                               <canvas id="circle" width="225" height="168" onload='javascript:drawCircle(143, 0, 36)'>your browser does not support the canvas tag</canvas>
+                           </div> 
+                           <div class="description">  
+                           <div class="scroll-item item-even">  
+                               <div class="rect" style="background-color: #6c6; "></div>  
+                               <div class="item-text">Pass:143</div>  
+                           </div>  
+                           <div class="scroll-item item-odd">  
+                               <div class="rect" style="background-color: #c60; "></div>  
+                               <div class="item-text">Fail:0</div>  
+                           </div>   
+                           <div class="scroll-item item-even">  
+                               <div class="rect" style="background-color: #c00; "></div>  
+                               <div class="item-text">Error:36</div>  
+                           </div> 
+                           <div class="scroll-item item-odd">  
+                           </div> 
+                           <div class="scroll-item item-even">    
+                           </div> 
+                       </div> 
+                       <div class="button" onclick='javascript:drawCircle(143, 0, 36)'><span class="buttonText">CLICK SEE PIE CHART</span></div>
+                       </div>  
+                       <div id="section2">  
+                       <div class="title">Bar Chart</div>  
+                           <div class="subTitle">This chart is to show the count that statis of test cases</div> 
+                           <div class="barchart">   
+                               <canvas id="bar" width="225" height="168" onload='javascript:drawBar(143, 0, 36)'>your browser does not support the canvas tag</canvas>
+                           </div> 
+                           <div class="description">  
+                           <div class="scroll-item item-even">  
+                               <div class="rect" style="background-color: #6c6; "></div>  
+                               <div class="item-text">Pass:143</div>  
+                           </div>  
+                           <div class="scroll-item item-odd">  
+                               <div class="rect" style="background-color: #c60; "></div>  
+                               <div class="item-text">Fail:0</div>  
+                           </div>   
+                           <div class="scroll-item item-even">  
+                               <div class="rect" style="background-color: #c00; "></div>  
+                               <div class="item-text">Error:36</div>  
+                           </div> 
+                           <div class="scroll-item item-odd">  
+                           </div> 
+                           <div class="scroll-item item-even">    
+                           </div> 
+                       </div> 
+                       <div class="button" onclick='javascript:drawBar(143, 0, 36)'><span class="buttonText">CLICK SEE BAR CHART</span></div>
+                       </div>  
+                       <div id="section3"> 
+                        <div class="title">Line Chart</div>  
+                           <div class="subTitle">This chart is to show the rate that data of test cases</div> 
+                           <div class="linechart">   
+                               <canvas id="line" width="225" height="168" onload='javascript:drawline(143, 0, 36)'>your browser does not support the canvas tag</canvas>
+                           </div> 
+                           <div class="description">  
+                           <div class="scroll-item item-even">  
+                               <div class="rect" style="background-color: #6c6; "></div>  
+                               <div class="item-text">Pass:143</div>  
+                           </div>  
+                           <div class="scroll-item item-odd">  
+                               <div class="rect" style="background-color: #c60; "></div>  
+                               <div class="item-text">Fail:0</div>  
+                           </div>   
+                           <div class="scroll-item item-even">  
+                               <div class="rect" style="background-color: #c00; "></div>  
+                               <div class="item-text">Error:36</div>  
+                           </div> 
+                           <div class="scroll-item item-odd">  
+                           </div> 
+                           <div class="scroll-item item-even">    
+                           </div> 
+                       </div> 
+                       <div class="button" onclick='javascript:drawline(143, 0, 36)'><span class="buttonText">CLICK SEE BAR CHART</span></div> 
+                       </div>  
+                       </div>
+                       <div class="panel1">
+                       <div id="section4">
+                           <a>Pass Cases: 143</a><br/>
+                           <a>Fail Cases: 0</a><br/>
+                           <a>Error Cases: 36</a><br/>
+                           <script>
+                                var pass = Number(143);
+                                var count = Number(179);
+                                var rate = pass/count;
+                                var Rate = rate.toFixed(2);
+                                document.write('Pass Rate: ' + Rate)
+                            </script>
+                       </div>
+                       </div>
+                    </div>
+</body>
+</html>
+<script type="text/javascript"> 
+
+function drawCircle(pass, fail, error){ 
+    var color = ["#6c6","#c60","#c00"];  
+    var data = [pass,fail,error]; 
+    var canvas = document.getElementById("circle");  
+    var ctx = canvas.getContext("2d");  
+    var startPoint=0;  
+    for(var i=0;i<data.length;i++){  
+        ctx.fillStyle = color[i];  
+        ctx.beginPath();  
+        ctx.moveTo(112,84);   
+        ctx.arc(112,84,84,startPoint,startPoint+Math.PI*2*(data[i]/(data[0]+data[1]+data[2])),false);  
+        ctx.fill();  
+        startPoint += Math.PI*2*(data[i]/(data[0]+data[1]+data[2]));  
+    }  
+}
+
+function FillRect(cxt, x1, y1, width, height, color) {
+    cxt.fillStyle = color; 
+    cxt.fillRect(x1, y1, width, height);
+} 
+
+function drawBar(pass, fail, error){ 
+
+    var color = ["#6c6","#c60","#c00"];  
+    var data = [pass,fail,error];
+    var count = pass + fail + error;
+    var h =[10+(1 - pass/count)*148,10+(1 - fail/count)*148,10+(1 - error/count)*148];
+    var x = [30,90,150];
+    var y = [70,130,190];
+    var canvas = document.getElementById("bar");  
+    var ctx = canvas.getContext("2d");
+    DrawString(ctx, 'Count(c)', '', '', '', '', 15, 10)
+    DrawLine(ctx,5,15,10,10,'black');
+    DrawLine(ctx,15,15,10,10,'black');
+    DrawLine(ctx,10,10,10,158,'black');
+    DrawLine(ctx,10,158,215,158,'black');
+    DrawLine(ctx,210,153,215,158,'black');
+    DrawLine(ctx,210,163,215,158,'black');
+    DrawString(ctx, 'Type(c)', '', '', '', '', 180, 160)
+    for(var i=0;i<3;i++) {
+        DrawLine(ctx,x[i],h[i],x[i],158,color[i]);
+        DrawLine(ctx,x[i],h[i],y[i],h[i],color[i]);
+        DrawLine(ctx,y[i],h[i],y[i],158,color[i]); 
+        DrawLine(ctx,(y[i]+x[i])/2,153,(y[i]+x[i])/2,158,color[i]);
+        DrawString(ctx, data[i], '', color[i], '', '', (y[i]+x[i])/2, h[i]-15);
+        FillRect(ctx, x[i], h[i], 40, 158-h[i], color[i]);
+    }
+} 
+
+function DrawP(ctx, P) {
+    with (ctx) {
+        moveTo(P[0],P[1]);
+        lineTo(P[0]+1,P[1]+1);
+     }
+}
+
+function DrawLine(cxt, x1, y1, x2, y2, color) {
+
+    cxt.strokeStyle = color;
+    cxt.beginPath();
+    cxt.moveTo(x1, y1);
+    cxt.lineTo(x2, y2);
+    cxt.stroke();
+}
+
+function DrawString(cxt, text, font, color, align, v_align, x, y) {
+    if (font == "") {
+        cxt.font = "10px";
+    }
+    else {
+        cxt.font = font;
+    }
+    if (color == "") {
+        cxt.fillStyle = "#000000";
+    }
+    else {
+        cxt.fillStyle = color;
+    }
+    if (align == "") {
+        cxt.textAlign = "left";
+    }
+    else {
+        cxt.textAlign = align;
+    }
+    if (v_align == "") {
+        cxt.textBaseline = "top";
+    }
+    else {
+        cxt.textBaseline = v_align;
+    }
+    cxt.fillText(text, x, y);
+}
+
+function drawline(pass, fail, error){ 
+    var color = ["#6c6","#c60","#c00"];  
+    var data = [pass,fail,error];
+    var count = pass + fail + error;
+    var x = [30,90,150];
+    var y = [70,130,190];
+    var h =[10+(1 - pass/count)*148,10+(1 - fail/count)*148,10+(1 - error/count)*148];
+    var canvas = document.getElementById("line");  
+    var ctx = canvas.getContext("2d");
+    DrawString(ctx, 'Count(c)', '', '', '', '', 15, 10)
+    DrawLine(ctx,5,15,10,10,'black');
+    DrawLine(ctx,15,15,10,10,'black');
+    DrawLine(ctx,10,10,10,158,'black');
+    DrawLine(ctx,10,158,215,158,'black');
+    DrawLine(ctx,210,153,215,158,'black');
+    DrawLine(ctx,210,163,215,158,'black');
+    DrawString(ctx, 'Type(c)', '', '', '', '', 180, 160)
+    for(var i=0;i<3;i++) {
+        p = Array((y[i]+x[i])/2,h[i]);
+        DrawP(ctx,p);
+        DrawLine(ctx,(y[i]+x[i])/2,153,(y[i]+x[i])/2,158,color[i]);
+        DrawString(ctx, data[i], '', color[i], '', '', (y[i]+x[i])/2, h[i]-15);
+        if(i < 2) {
+        
+            DrawLine(ctx,(y[i]+x[i])/2,h[i],(y[i+1]+x[i+1])/2,h[i+1],'black');
+            
+        }
+        
+    }
+    
+} 
+
+</script>  
